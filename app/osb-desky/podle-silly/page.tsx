@@ -196,28 +196,6 @@ export default function PodleSilyPage() {
 
       <HeurekaWidget position="middle" />
 
-      {/* Všechny tloušťky – detailní články */}
-      <section className="my-10">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Všechny tloušťky – detailní články</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {thicknesses.map((t) => (
-            <Link
-              key={t.slug}
-              href={`/osb-desky/${t.slug}`}
-              className={`block p-5 border rounded-lg hover:shadow-md transition-all ${
-                t.featured
-                  ? 'border-primary-500 bg-primary-50 hover:bg-primary-100'
-                  : 'border-gray-200 hover:border-primary-500'
-              }`}
-            >
-              <h3 className="font-bold text-gray-900 mb-1">{t.label}</h3>
-              <p className="text-sm text-gray-600">{t.description}</p>
-              {t.featured && <span className="inline-block mt-2 text-xs font-semibold text-primary-600">Nejoblíbenější volba</span>}
-            </Link>
-          ))}
-        </div>
-      </section>
-
       {/* Související kategorie */}
       <section className="my-10 pt-8 border-t border-gray-200">
         <h2 className="text-xl font-bold text-gray-900 mb-4">Další kategorie OSB desek</h2>

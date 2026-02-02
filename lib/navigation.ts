@@ -109,6 +109,16 @@ export const navodyArticles = [
   { slug: 'omitka', label: 'Vnitrni omitka na OSB desky' },
 ]
 
+export function allOsbArticleSlugs(): string[] {
+  const slugs: string[] = []
+  for (const cat of Object.values(categoryMap)) {
+    for (const sub of cat.subcategories) {
+      slugs.push(sub.slug)
+    }
+  }
+  return slugs
+}
+
 export const dalsiTypyDesekArticles = [
   { slug: 'durelis', label: 'Durelis desky' },
   { slug: 'durelis-12mm', label: 'Durelis desky 12mm' },

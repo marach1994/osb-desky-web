@@ -9,6 +9,7 @@ import { getArticleBySlug, getArticleContent, getAllArticles } from '@/lib/mdx'
 import { getRelatedArticles } from '@/lib/related'
 import { generateCategoryMetadata, generateArticleMetadata, generateArticleJsonLd, generateBreadcrumbJsonLd } from '@/lib/seo'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import { getWidgetCode } from '@/lib/widgets'
 
 interface Props {
   params: Promise<{ category: string }>
@@ -102,9 +103,9 @@ export default async function OsbDeskySlugPage({ params }: Props) {
         ]} />
 
         <div className="prose prose-gray max-w-none">
-          <HeurekaWidget position="top" />
+          <HeurekaWidget position="top" iframeCode={getWidgetCode('osb-desky', slug, 'top')} />
           <MDXRemote source={content} />
-          <HeurekaWidget position="bottom" />
+          <HeurekaWidget position="bottom" iframeCode={getWidgetCode('osb-desky', slug, 'bottom')} />
         </div>
 
         <RelatedArticles articles={related} />

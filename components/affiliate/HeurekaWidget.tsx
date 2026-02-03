@@ -1,21 +1,36 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+
 interface HeurekaWidgetProps {
   position: 'top' | 'middle' | 'bottom'
   iframeCode?: string
 }
 
 export default function HeurekaWidget({ position, iframeCode }: HeurekaWidgetProps) {
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!iframeCode) return
+
+    // Load trixam script if not already loaded
+    const scriptId = 'heureka-trixam-script'
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement('script')
+      script.id = scriptId
+      script.src = 'https://affiliate.heureka.cz/js/trixam.js'
+      script.async = true
+      document.body.appendChild(script)
+    }
+  }, [iframeCode])
+
   if (!iframeCode) {
-    return (
-      <div className="my-8 p-6 border-2 border-dashed border-gray-300 rounded-lg bg-gray-50">
-        <p className="text-center text-gray-500 text-sm">
-          Heureka widget ({position}) - vlozte iframe kod z Heureka.cz
-        </p>
-      </div>
-    )
+    return null
   }
 
   return (
     <div
+      ref={containerRef}
       className="my-8"
       dangerouslySetInnerHTML={{ __html: iframeCode }}
     />

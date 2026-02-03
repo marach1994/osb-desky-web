@@ -18,7 +18,7 @@ export default function HeurekaWidget({ position, iframeCode }: HeurekaWidgetPro
     if (!document.getElementById(scriptId)) {
       const script = document.createElement('script')
       script.id = scriptId
-      script.src = 'https://affiliate.heureka.cz/js/trixam.js'
+      script.src = 'https://serve.affiliate.heureka.cz/js/trixam.min.js'
       script.async = true
       document.body.appendChild(script)
     }

@@ -110,7 +110,6 @@ export default async function OsbDeskySlugPage({ params }: Props) {
           <HeurekaProductGrid
             positionId={article.heurekaPositionId}
             categoryId={article.heurekaCategoryId}
-            productCount={6}
           />
         ) : (
           <ProductGrid products={getProductsForArticle('osb-desky', slug)} />

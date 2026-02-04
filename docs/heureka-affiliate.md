@@ -1,7 +1,61 @@
 # Heureka Affiliate - Dokumentace
 
-<!-- Vlož sem dokumentaci z Heureka affiliate -->
-Kód umístění: 
+## Přehled pozic podle URL
+
+### /osb-desky/8mm
+```
+heurekaPositionId: "260397"
+heurekaCategoryId: "6038"
+```
+
+### /osb-desky/12mm
+```
+heurekaPositionId: "260397"
+heurekaCategoryId: "6038"
+```
+
+### /osb-desky/15mm
+```
+heurekaPositionId: "260397"
+heurekaCategoryId: "6038"
+```
+
+### /osb-desky/16mm
+```
+heurekaPositionId: "260397"
+heurekaCategoryId: "6038"
+```
+
+### /osb-desky/18mm
+```
+heurekaPositionId: "260397"
+heurekaCategoryId: "6038"
+```
+
+### /osb-desky/19mm
+```
+heurekaPositionId: "260397"
+heurekaCategoryId: "6038"
+```
+
+### /osb-desky/22mm
+```
+heurekaPositionId: "260397"
+heurekaCategoryId: "6038"
+```
+
+### /osb-desky/25mm
+```
+heurekaPositionId: "260397"
+heurekaCategoryId: "6038"
+```
+
+---
+
+## Heureka šablona pro vlastní HTML banner
+
+Kód umístění:
+```html
 <div class="heureka-affiliate-category" data-trixam-positionid="260397" data-trixam-categoryid="6038" data-trixam-categoryfilters="" data-trixam-codetype="plainhtml" data-trixam-linktarget="top">
     <div><a href="https://www.heureka.cz/" data-trixam-databind="target: LinkTarget, href: HomepageAdvert.ClickUrl"><img src="" data-trixam-databind="src: HeurekaLogoUrl"></a></div>
     <div><a href="#" data-trixam-databind="target: LinkTarget, href: CategoryAdvert.ClickUrl"><span data-trixam-databind="text: CategoryAdvert.Data.Category.Name"></span></a></div>
@@ -16,32 +70,40 @@ Kód umístění:
         </div>
     </div>
 </div>
+```
 
 Hlavní kód:
+```html
 <script async type="text/javascript" src="//serve.affiliate.heureka.cz/js/trixam.min.js"></script>
-Návod na použití html banneru
+```
+
+## Návod na použití HTML banneru
+
 Při vkládání musí být beze změny zachován obalový kód banneru:
 
+```html
 <div class="heureka-affiliate-category" data-trixam-positionid="260397" data-trixam-categoryid="6038" data-trixam-codetype="plainhtml" data-trixam-linktarget="top">kód banneru</div>
-Tento obalový kód zajišťuje funkčnost banneru a správné měření. Vnitřní kód banneru lze libovolně nakonfigurovat - vložit pouze prvky, které chcete zobrazit, přidat libovolné třídy a měnit HTML elementy (span, div, p, ...). Důležité je, aby nebyl porušen kód uvnitř atributů data-trixam-databind u jednotlivých HTML elementů.
+```
 
-Link na úvodní stranu Heureka.cz	<a href="#" data-trixam-databind="target: LinkTarget, href: HomepageAdvert.ClickUrl"></a>	Speciální proklikové url, umožňující započítání proklikových a konverzních provizí
-Link na kategorii	<a href="#" data-trixam-databind="target: LinkTarget, href: CategoryAdvert.ClickUrl"></a>	Speciální proklikové url, umožňující započítání proklikových a konverzních provizí
-Link na produkt	<a href="#" data-trixam-databind="target: LinkTarget, href: ProductAdverts[0].ClickUrl"></a>	Speciální proklikové url, umožňující započítání proklikových a konverzních provizí
-Název kategorie	<span data-trixam-databind="text: CategoryAdvert.Data.Category.Name"></span>	OSB desky
-Název produktu	<span data-trixam-databind="text: ProductAdverts[0].Product.Title"></span>	Kronospan OSB 3 PD 2500 x 625 x 12 mm 1 ks
-Minimální cena produktu a měna ceny	<span data-trixam-databind="text: ProductAdverts[0].Product.PriceMinString"></span><span data-trixam-databind="text: Currency"></span>	166Kč
-Maximální cena produktu a měna ceny	<span data-trixam-databind="text: ProductAdverts[0].Product.PriceMaxString"></span><span data-trixam-databind="text: Currency"></span>	301Kč
-Hodnocení produktu	<span data-trixam-databind="ifdef: ProductAdverts[0].Product.Rating"><span data-trixam-databind="text: ProductAdverts[0].Product.Rating"></span>%</span>
-Hodnocení produktu nemusí být vždy dostupné, proto je třeba podmínka, aby se znak procenta zobrazil jen, pokud je hodnocení dostupné.
+Tento obalový kód zajišťuje funkčnost banneru a správné měření. Vnitřní kód banneru lze libovolně nakonfigurovat.
 
-98%
-Náhledový obrázek (150x150px)	<img data-trixam-databind="src: ProductAdverts[0].Product.PreviewImage" src="" width="150" height="150" /></span>	
-Velký obrázek (různá velikost)	<img data-trixam-databind="src: ProductAdverts[0].Product.ImageUrl" src="" />	
-Popis produktu	<span data-trixam-databind="text: ProductAdverts[0].Product.DescriptionShort"></span>	Cena platná pouze pro skladové zásoby ve Vítkově a Homolích! V případě zájmu o větší množství bude cena naceněna individuálně naším operátorem dle aktuálního ceníku...
-Podmínka, jestli existuje 1. top produkt	<span data-trixam-databind="ifdef: ProductAdverts[0]"><span data-trixam-databind="text: ProductAdverts[0].Product.Title"></span></span>
-Zobrazí název 1. top produktu, pokud existuje.
+## Dostupné data-trixam-databind atributy
 
-Kronospan OSB 3 PD 2500 x 625 x 12 mm 1 ks
-Logo Heureka	<img data-trixam-databind="src: HeurekaLogoUrl" src="" />	
-ProductAdverts[0] = první top produkt v kategorii, 1 = druhý top produkt, atd. Pro banner je dostupných maximálně 10 produktů. Minimálně 0.
+| Prvek | Kód | Příklad |
+|-------|-----|---------|
+| Link na úvodní stranu Heureka.cz | `<a href="#" data-trixam-databind="target: LinkTarget, href: HomepageAdvert.ClickUrl"></a>` | - |
+| Link na kategorii | `<a href="#" data-trixam-databind="target: LinkTarget, href: CategoryAdvert.ClickUrl"></a>` | - |
+| Link na produkt | `<a href="#" data-trixam-databind="target: LinkTarget, href: ProductAdverts[0].ClickUrl"></a>` | - |
+| Název kategorie | `<span data-trixam-databind="text: CategoryAdvert.Data.Category.Name"></span>` | OSB desky |
+| Název produktu | `<span data-trixam-databind="text: ProductAdverts[0].Product.Title"></span>` | Kronospan OSB 3 PD 2500 x 625 x 12 mm 1 ks |
+| Minimální cena | `<span data-trixam-databind="text: ProductAdverts[0].Product.PriceMinString"></span>` | 166 |
+| Maximální cena | `<span data-trixam-databind="text: ProductAdverts[0].Product.PriceMaxString"></span>` | 301 |
+| Měna | `<span data-trixam-databind="text: Currency"></span>` | Kč |
+| Hodnocení produktu | `<span data-trixam-databind="ifdef: ProductAdverts[0].Product.Rating"><span data-trixam-databind="text: ProductAdverts[0].Product.Rating"></span>%</span>` | 98% |
+| Náhledový obrázek (150x150px) | `<img data-trixam-databind="src: ProductAdverts[0].Product.PreviewImage" src="" />` | - |
+| Velký obrázek | `<img data-trixam-databind="src: ProductAdverts[0].Product.ImageUrl" src="" />` | - |
+| Popis produktu | `<span data-trixam-databind="text: ProductAdverts[0].Product.DescriptionShort"></span>` | - |
+| Podmínka existence produktu | `<span data-trixam-databind="ifdef: ProductAdverts[0]">...</span>` | - |
+| Logo Heureka | `<img data-trixam-databind="src: HeurekaLogoUrl" src="" />` | - |
+
+**Poznámka:** `ProductAdverts[0]` = první top produkt, `ProductAdverts[1]` = druhý, atd. Max 10 produktů (0-9).

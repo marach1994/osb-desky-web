@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import HeurekaWidget from '@/components/affiliate/HeurekaWidget'
+import HeurekaProductGrid from '@/components/affiliate/HeurekaProductGrid'
 import RelatedArticles from '@/components/article/RelatedArticles'
 import ProductGrid from '@/components/products/ProductGrid'
 import { categoryMap, allOsbArticleSlugs } from '@/lib/navigation'
@@ -105,13 +106,18 @@ export default async function OsbDeskySlugPage({ params }: Props) {
           { label: article.title, href: `/osb-desky/${slug}` },
         ]} />
 
-        <HeurekaWidget position="top" iframeCode={article.heurekaWidget} />
-
         <div className="prose prose-gray max-w-none">
           <MDXRemote source={content} />
         </div>
 
-        <ProductGrid products={getProductsForArticle('osb-desky', slug)} />
+        {article.heurekaPositionId && article.heurekaCategoryId ? (
+          <HeurekaProductGrid
+            positionId={article.heurekaPositionId}
+            categoryId={article.heurekaCategoryId}
+          />
+        ) : (
+          <ProductGrid products={getProductsForArticle('osb-desky', slug)} />
+        )}
 
         <RelatedArticles articles={related} />
       </div>

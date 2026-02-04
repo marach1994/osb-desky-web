@@ -29,15 +29,32 @@ export default function HeurekaProductGrid({
   useEffect(() => {
     // Load trixam script if not already loaded
     const scriptId = 'heureka-trixam-script'
-    const existingScript = document.getElementById(scriptId)
 
     const initWidgets = () => {
-      setTimeout(() => {
-        if (window.Trixam?.init) {
-          window.Trixam.init()
+      // Try multiple initialization methods
+      const tryInit = () => {
+        if (typeof window !== 'undefined') {
+          // @ts-expect-error Trixam is loaded externally
+          if (window.Trixam?.init) {
+            // @ts-expect-error Trixam is loaded externally
+            window.Trixam.init()
+          }
+          // @ts-expect-error trixam global function
+          if (typeof window.trixam === 'function') {
+            // @ts-expect-error trixam global function
+            window.trixam()
+          }
         }
-      }, 100)
+      }
+
+      // Try immediately and after delays
+      tryInit()
+      setTimeout(tryInit, 200)
+      setTimeout(tryInit, 500)
+      setTimeout(tryInit, 1000)
     }
+
+    const existingScript = document.getElementById(scriptId)
 
     if (!existingScript) {
       const script = document.createElement('script')

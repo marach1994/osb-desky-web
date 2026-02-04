@@ -38,13 +38,16 @@ export default function HeurekaProductGrid({
     const widgetHtml = `
       <div class="heureka-affiliate-category" data-trixam-positionid="${positionId}" data-trixam-categoryid="${categoryId}" data-trixam-categoryfilters="${categoryFilters}" data-trixam-codetype="plainhtml" data-trixam-linktarget="top">
         <div>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
             ${productTemplate(0)}
             ${productTemplate(1)}
             ${productTemplate(2)}
             ${productTemplate(3)}
-            ${productTemplate(4)}
-            ${productTemplate(5)}
+          </div>
+          <div class="mt-6 text-center">
+            <a href="#" data-trixam-databind="target: LinkTarget, href: CategoryAdvert.ClickUrl" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors">
+              Zobrazit všechny OSB desky na Heureka.cz →
+            </a>
           </div>
         </div>
       </div>

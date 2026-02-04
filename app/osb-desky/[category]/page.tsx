@@ -4,16 +4,19 @@ import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import HeurekaWidget from '@/components/affiliate/HeurekaWidget'
 import RelatedArticles from '@/components/article/RelatedArticles'
+import ProductGrid from '@/components/products/ProductGrid'
 import { categoryMap, allOsbArticleSlugs } from '@/lib/navigation'
 import { getArticleBySlug, getArticleContent, getAllArticles } from '@/lib/mdx'
 import { getRelatedArticles } from '@/lib/related'
+import { getProductsForArticle } from '@/lib/products'
 import { generateCategoryMetadata, generateArticleMetadata, generateArticleJsonLd, generateBreadcrumbJsonLd } from '@/lib/seo'
 import { MDXRemote } from 'next-mdx-remote/rsc'
-import { getWidgetCode } from '@/lib/widgets'
 
 interface Props {
   params: Promise<{ category: string }>
 }
+
+export const dynamicParams = true
 
 export async function generateStaticParams() {
   // Generate both category slugs and article slugs
@@ -102,11 +105,13 @@ export default async function OsbDeskySlugPage({ params }: Props) {
           { label: article.title, href: `/osb-desky/${slug}` },
         ]} />
 
+        <HeurekaWidget position="top" iframeCode={article.heurekaWidget} />
+
         <div className="prose prose-gray max-w-none">
-          <HeurekaWidget position="top" iframeCode={getWidgetCode('osb-desky', slug, 'top')} />
           <MDXRemote source={content} />
-          <HeurekaWidget position="bottom" iframeCode={getWidgetCode('osb-desky', slug, 'bottom')} />
         </div>
+
+        <ProductGrid products={getProductsForArticle('osb-desky', slug)} />
 
         <RelatedArticles articles={related} />
       </div>

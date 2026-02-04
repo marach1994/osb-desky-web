@@ -8,6 +8,7 @@ export interface Article {
   relatedArticles?: string[]
   publishedAt: string
   updatedAt?: string
+  heurekaWidget?: string
 }
 
 export interface BreadcrumbItem {

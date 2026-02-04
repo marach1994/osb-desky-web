@@ -22,6 +22,7 @@ export function getArticleBySlug(category: string, slug: string): Article | null
     relatedArticles: data.relatedArticles,
     publishedAt: data.publishedAt || new Date().toISOString(),
     updatedAt: data.updatedAt,
+    heurekaWidget: data.heurekaWidget,
   }
 }
 

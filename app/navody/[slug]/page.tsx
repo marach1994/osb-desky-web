@@ -3,8 +3,10 @@ import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import HeurekaWidget from '@/components/affiliate/HeurekaWidget'
 import RelatedArticles from '@/components/article/RelatedArticles'
+import ProductGrid from '@/components/products/ProductGrid'
 import { getArticleBySlug, getArticleContent, getAllArticles } from '@/lib/mdx'
 import { getRelatedArticles } from '@/lib/related'
+import { getProductsForArticle } from '@/lib/products'
 import { generateArticleMetadata, generateArticleJsonLd, generateBreadcrumbJsonLd } from '@/lib/seo'
 import { navodyArticles } from '@/lib/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
@@ -70,6 +72,8 @@ export default async function NavodPage({ params }: Props) {
         <MDXRemote source={content} />
         <HeurekaWidget position="bottom" />
       </div>
+
+      <ProductGrid products={getProductsForArticle('navody', slug)} />
 
       <RelatedArticles articles={related} />
     </div>

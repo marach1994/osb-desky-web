@@ -22,14 +22,14 @@ export default function HeurekaProductGrid({
 
     // Exact Heureka structure - products must be wrapped in container div
     const productTemplate = (i: number) => `
-      <div data-trixam-databind="ifdef: ProductAdverts[${i}]" class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all">
+      <div data-trixam-databind="ifdef: ProductAdverts[${i}]" class="bg-white border border-gray-200 rounded-md overflow-hidden hover:shadow-md transition-all">
         <a href="#" data-trixam-databind="target: LinkTarget, href: ProductAdverts[${i}].ClickUrl" class="block">
-          <div class="aspect-square bg-gray-100 flex items-center justify-center p-2">
-            <img data-trixam-databind="src: ProductAdverts[${i}].Product.PreviewImage" src="" width="150" height="150" class="max-w-full max-h-full object-contain">
+          <div class="bg-gray-100 flex items-center justify-center p-1" style="height: 120px;">
+            <img data-trixam-databind="src: ProductAdverts[${i}].Product.PreviewImage" src="" width="100" height="100" class="max-w-full max-h-full object-contain">
           </div>
-          <div class="p-3">
-            <div class="text-sm font-medium text-gray-900 line-clamp-2 min-h-[2.5rem] mb-2"><span data-trixam-databind="text: ProductAdverts[${i}].Product.Title"></span></div>
-            <div class="text-lg font-bold text-primary-600"><span data-trixam-databind="text: ProductAdverts[${i}].Product.PriceMinString"></span> <span data-trixam-databind="text: Currency">Kč</span></div>
+          <div class="p-2">
+            <div class="text-xs font-medium text-gray-900 line-clamp-2 min-h-[2rem] mb-1"><span data-trixam-databind="text: ProductAdverts[${i}].Product.Title"></span></div>
+            <div class="text-sm font-bold text-primary-600"><span data-trixam-databind="text: ProductAdverts[${i}].Product.PriceMinString"></span> <span data-trixam-databind="text: Currency">Kč</span></div>
           </div>
         </a>
       </div>
@@ -37,8 +37,8 @@ export default function HeurekaProductGrid({
 
     const widgetHtml = `
       <div class="heureka-affiliate-category" data-trixam-positionid="${positionId}" data-trixam-categoryid="${categoryId}" data-trixam-categoryfilters="${categoryFilters}" data-trixam-codetype="plainhtml" data-trixam-linktarget="top">
-        <div>
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="max-w-2xl mx-auto">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
             ${productTemplate(0)}
             ${productTemplate(1)}
             ${productTemplate(2)}

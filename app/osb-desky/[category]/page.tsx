@@ -106,18 +106,19 @@ export default async function OsbDeskySlugPage({ params }: Props) {
           { label: article.title, href: `/osb-desky/${slug}` },
         ]} />
 
-        <div className="prose prose-gray max-w-none">
-          <MDXRemote source={content} />
-        </div>
-
         {article.heurekaPositionId && article.heurekaCategoryId ? (
           <HeurekaProductGrid
             positionId={article.heurekaPositionId}
             categoryId={article.heurekaCategoryId}
+            productCount={6}
           />
         ) : (
           <ProductGrid products={getProductsForArticle('osb-desky', slug)} />
         )}
+
+        <div className="prose prose-gray max-w-none">
+          <MDXRemote source={content} />
+        </div>
 
         <RelatedArticles articles={related} />
       </div>

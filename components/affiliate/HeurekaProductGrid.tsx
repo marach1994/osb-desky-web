@@ -24,7 +24,7 @@ export default function HeurekaProductGrid({
   categoryId,
   categoryFilters = '',
   title = 'Doporučené produkty',
-  productCount = 4,
+  productCount = 6,
 }: HeurekaProductGridProps) {
   useEffect(() => {
     // Load trixam script if not already loaded

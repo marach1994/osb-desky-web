@@ -1,5 +1,26 @@
 # Heureka Affiliate - Dokumentace
 
+## Jak to funguje
+
+Widget se vkládá přímo do MDX souboru pomocí komponenty:
+
+```jsx
+<HeurekaAffiliateWidget />
+```
+
+Widget automaticky používá výchozí hodnoty:
+- `positionId="260397"`
+- `categoryId="6038"`
+
+Můžeš je přepsat:
+```jsx
+<HeurekaAffiliateWidget positionId="123456" categoryId="789" />
+```
+
+## Kde se widget zobrazuje
+
+Widget je umístěn v každém MDX souboru po úvodních odstavcích, před prvním H2 nadpisem.
+
 ## Přehled pozic podle URL
 
 ### /osb-desky/8mm

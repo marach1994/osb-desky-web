@@ -44,9 +44,9 @@ export default function HeurekaProductGrid({
             ${productTemplate(2)}
             ${productTemplate(3)}
           </div>
-          <div class="mt-6 text-center">
-            <a href="#" data-trixam-databind="target: LinkTarget, href: CategoryAdvert.ClickUrl" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors">
-              Zobrazit všechny OSB desky na Heureka.cz →
+          <div class="mt-4 text-center">
+            <a href="#" data-trixam-databind="target: LinkTarget, href: CategoryAdvert.ClickUrl" class="inline-flex items-center px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+              Zobrazit všechny OSB desky
             </a>
           </div>
         </div>
@@ -71,10 +71,10 @@ export default function HeurekaProductGrid({
   }, [positionId, categoryId, categoryFilters])
 
   return (
-    <section className="my-10 py-8 px-6 bg-wood-50 rounded-xl border border-wood-200">
-      <h2 className="text-xl font-bold text-gray-900 mb-6">{title}</h2>
+    <section className="my-6 py-4 px-4 bg-wood-50 rounded-lg border border-wood-200">
+      <h2 className="text-lg font-bold text-gray-900 mb-4">{title}</h2>
       <div ref={containerRef}></div>
-      <p className="text-xs text-gray-400 mt-4 text-center">
+      <p className="text-xs text-gray-400 mt-3 text-center">
         Ceny jsou uvedeny včetně DPH. Kliknutím přejdete na Heureka.cz.
       </p>
     </section>

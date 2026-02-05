@@ -115,6 +115,7 @@ export default async function OsbDeskySlugPage({ params }: Props) {
 
         {article.heurekaPositionId && article.heurekaCategoryId ? (
           <HeurekaProductGrid
+            key={slug}
             positionId={article.heurekaPositionId}
             categoryId={article.heurekaCategoryId}
             categoryFilters={article.heurekaCategoryFilters}

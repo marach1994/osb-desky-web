@@ -78,10 +78,20 @@ export default function HeurekaProductGrid({
     existingScripts.forEach(s => s.remove())
 
     // Load fresh script with cache-busting parameter
+    const timestamp = Date.now()
     const script = document.createElement('script')
-    script.src = `https://serve.affiliate.heureka.cz/js/trixam.min.js?t=${Date.now()}`
+    script.src = `https://serve.affiliate.heureka.cz/js/trixam.min.js?t=${timestamp}`
     script.onload = initTrixam
     document.body.appendChild(script)
+
+    // Cleanup on unmount
+    return () => {
+      if (containerRef.current) {
+        containerRef.current.innerHTML = ''
+      }
+      const scripts = document.querySelectorAll('script[src*="trixam"]')
+      scripts.forEach(s => s.remove())
+    }
   }, [positionId, categoryId, categoryFilters])
 
   return (

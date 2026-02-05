@@ -8,12 +8,12 @@ interface ProductCardProps {
 function getAffiliateUrl(originalUrl: string): string {
   try {
     const url = new URL(originalUrl)
-    url.searchParams.set('utm_source', 'am')
-    url.searchParams.set('a_aid', '6981ed6919510')
-    url.searchParams.set('a_bid', '6ba10177')
+    // Remove all existing query params and add only affiliate params
+    url.search = '?utm_source=am&a_aid=6981ed6919510&a_bid=6ba10177'
     return url.toString()
   } catch {
-    return originalUrl + '?utm_source=am&a_aid=6981ed6919510&a_bid=6ba10177'
+    const baseUrl = originalUrl.split('?')[0]
+    return baseUrl + '?utm_source=am&a_aid=6981ed6919510&a_bid=6ba10177'
   }
 }
 

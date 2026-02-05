@@ -45,7 +45,15 @@ export function getProductsForArticle(category: string, slug: string): Product[]
     // Default: return some OSB products
     return getProducts({ categoryContains: 'OSB', maxProducts: 4 })
   }
-  return getProducts({ ...mapping, maxProducts: mapping.maxProducts || 6 })
+
+  const filtered = getProducts({ ...mapping, maxProducts: mapping.maxProducts || 6 })
+
+  // Fallback to general OSB products if no specific size match
+  if (filtered.length === 0 && mapping.categoryContains === 'OSB') {
+    return getProducts({ categoryContains: 'OSB', maxProducts: 4 })
+  }
+
+  return filtered
 }
 
 // Mapping of article slugs to product filters

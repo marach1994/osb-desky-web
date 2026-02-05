@@ -79,15 +79,24 @@ export default function HeurekaProductGrid({
       }
     }
 
+    // Function to refresh/reinitialize Trixam
+    const refreshTrixam = () => {
+      if (window.Trixam?.refresh) {
+        window.Trixam.refresh()
+      } else if (window.Trixam?.init) {
+        window.Trixam.init()
+      }
+    }
+
     // Check if Trixam is already loaded
     if (window.Trixam) {
-      // Already loaded, just reinitialize after a short delay
-      setTimeout(initTrixam, 100)
+      // Already loaded, try refresh first, then init
+      setTimeout(refreshTrixam, 150)
     } else {
       // Load script for the first time
       const script = document.createElement('script')
       script.src = 'https://serve.affiliate.heureka.cz/js/trixam.min.js'
-      script.onload = () => setTimeout(initTrixam, 100)
+      script.onload = () => setTimeout(initTrixam, 150)
       document.body.appendChild(script)
     }
 

@@ -78,9 +78,7 @@ export default function HeurekaProductGrid({
     existingScripts.forEach(s => s.remove())
 
     // Clear Trixam from window to force fresh init
-    if (window.Trixam) {
-      delete window.Trixam
-    }
+    ;(window as Record<string, unknown>).Trixam = undefined
 
     // Load fresh script
     const script = document.createElement('script')

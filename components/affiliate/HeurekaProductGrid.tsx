@@ -74,31 +74,28 @@ export default function HeurekaProductGrid({
 
     // Function to initialize Trixam
     const initTrixam = () => {
-      setTimeout(() => {
-        if (window.Trixam?.init) {
-          window.Trixam.init()
-        }
-      }, 50)
+      if (window.Trixam?.init) {
+        window.Trixam.init()
+      }
     }
 
-    // Remove any existing script
-    const existingScripts = document.querySelectorAll('script[src*="trixam"]')
-    existingScripts.forEach(s => s.remove())
-
-    // Load fresh script with cache-busting parameter
-    const timestamp = Date.now()
-    const script = document.createElement('script')
-    script.src = `https://serve.affiliate.heureka.cz/js/trixam.min.js?t=${timestamp}`
-    script.onload = initTrixam
-    document.body.appendChild(script)
+    // Check if Trixam is already loaded
+    if (window.Trixam) {
+      // Already loaded, just reinitialize after a short delay
+      setTimeout(initTrixam, 100)
+    } else {
+      // Load script for the first time
+      const script = document.createElement('script')
+      script.src = 'https://serve.affiliate.heureka.cz/js/trixam.min.js'
+      script.onload = () => setTimeout(initTrixam, 100)
+      document.body.appendChild(script)
+    }
 
     // Cleanup on unmount
     return () => {
       if (containerRef.current) {
         containerRef.current.innerHTML = ''
       }
-      const scripts = document.querySelectorAll('script[src*="trixam"]')
-      scripts.forEach(s => s.remove())
     }
   }, [positionId, categoryId, categoryFilters, loadKey])
 

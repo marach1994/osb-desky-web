@@ -6,6 +6,7 @@ import HeurekaWidget from '@/components/affiliate/HeurekaWidget'
 import HeurekaProductGrid from '@/components/affiliate/HeurekaProductGrid'
 import RelatedArticles from '@/components/article/RelatedArticles'
 import ProductGrid from '@/components/products/ProductGrid'
+import ProductGridWidget from '@/components/mdx/ProductGridWidget'
 import { categoryMap, allOsbArticleSlugs } from '@/lib/navigation'
 import { getArticleBySlug, getArticleContent, getAllArticles } from '@/lib/mdx'
 import { getRelatedArticles } from '@/lib/related'
@@ -86,6 +87,7 @@ export default async function OsbDeskySlugPage({ params }: Props) {
     const allArticles = getAllArticles()
     const related = getRelatedArticles(article, allArticles)
     const catInfo = article.subcategory ? categoryMap[article.subcategory] : undefined
+    const products = getProductsForArticle('osb-desky', slug)
 
     const articleJsonLd = generateArticleJsonLd(article, `/osb-desky/${slug}`)
     const breadcrumbItems = [
@@ -94,6 +96,11 @@ export default async function OsbDeskySlugPage({ params }: Props) {
       { name: article.title, url: `/osb-desky/${slug}` },
     ]
     const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems)
+
+    // MDX components with products pre-bound
+    const mdxComponents = {
+      ProductGridWidget: () => <ProductGridWidget products={products} />,
+    }
 
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
@@ -113,11 +120,11 @@ export default async function OsbDeskySlugPage({ params }: Props) {
             categoryFilters={article.heurekaCategoryFilters}
           />
         ) : (
-          <ProductGrid products={getProductsForArticle('osb-desky', slug)} />
+          <ProductGrid products={products} />
         )}
 
         <div className="prose prose-gray max-w-none">
-          <MDXRemote source={content} />
+          <MDXRemote source={content} components={mdxComponents} />
         </div>
 
         <RelatedArticles articles={related} />

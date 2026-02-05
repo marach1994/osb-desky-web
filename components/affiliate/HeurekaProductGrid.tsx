@@ -77,9 +77,6 @@ export default function HeurekaProductGrid({
     const existingScripts = document.querySelectorAll('script[src*="trixam"]')
     existingScripts.forEach(s => s.remove())
 
-    // Clear Trixam from window to force fresh init
-    ;(window as Record<string, unknown>).Trixam = undefined
-
     // Load fresh script
     const script = document.createElement('script')
     script.src = 'https://serve.affiliate.heureka.cz/js/trixam.min.js'

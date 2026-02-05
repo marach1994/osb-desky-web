@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 declare global {
   interface Window {
@@ -25,6 +26,13 @@ export default function HeurekaProductGrid({
   title = 'Doporučené produkty',
 }: HeurekaProductGridProps) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const pathname = usePathname()
+  const [loadKey, setLoadKey] = useState(0)
+
+  // Force reload when pathname changes
+  useEffect(() => {
+    setLoadKey(prev => prev + 1)
+  }, [pathname])
 
   useEffect(() => {
     if (!containerRef.current) return
@@ -92,7 +100,7 @@ export default function HeurekaProductGrid({
       const scripts = document.querySelectorAll('script[src*="trixam"]')
       scripts.forEach(s => s.remove())
     }
-  }, [positionId, categoryId, categoryFilters])
+  }, [positionId, categoryId, categoryFilters, loadKey])
 
   return (
     <section className="my-6 py-4 px-4 bg-wood-50 rounded-lg border border-wood-200">

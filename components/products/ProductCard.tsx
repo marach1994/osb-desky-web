@@ -5,10 +5,22 @@ interface ProductCardProps {
   product: Product
 }
 
+function getAffiliateUrl(originalUrl: string): string {
+  try {
+    const url = new URL(originalUrl)
+    url.searchParams.set('utm_source', 'am')
+    url.searchParams.set('a_aid', '6981ed6919510')
+    url.searchParams.set('a_bid', '6ba10177')
+    return url.toString()
+  } catch {
+    return originalUrl + '?utm_source=am&a_aid=6981ed6919510&a_bid=6ba10177'
+  }
+}
+
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <a
-      href={product.url}
+      href={getAffiliateUrl(product.url)}
       target="_blank"
       rel="noopener noreferrer nofollow"
       className="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg hover:border-primary-500 transition-all group"

@@ -25,6 +25,7 @@ export function getArticleBySlug(category: string, slug: string): Article | null
     heurekaWidget: data.heurekaWidget,
     heurekaPositionId: data.heurekaPositionId,
     heurekaCategoryId: data.heurekaCategoryId,
+    heurekaCategoryFilters: data.heurekaCategoryFilters,
   }
 }
 

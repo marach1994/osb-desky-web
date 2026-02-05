@@ -11,6 +11,7 @@ export interface Article {
   heurekaWidget?: string
   heurekaPositionId?: string
   heurekaCategoryId?: string
+  heurekaCategoryFilters?: string
 }
 
 export interface BreadcrumbItem {

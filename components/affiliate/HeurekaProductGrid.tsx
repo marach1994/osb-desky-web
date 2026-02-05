@@ -2,6 +2,15 @@
 
 import { useEffect, useRef } from 'react'
 
+declare global {
+  interface Window {
+    Trixam?: {
+      init?: () => void
+      refresh?: () => void
+    }
+  }
+}
+
 interface HeurekaProductGridProps {
   positionId: string
   categoryId: string
@@ -55,19 +64,35 @@ export default function HeurekaProductGrid({
 
     containerRef.current.innerHTML = widgetHtml
 
+    // Function to initialize Trixam
+    const initTrixam = () => {
+      if (window.Trixam?.init) {
+        window.Trixam.init()
+      }
+    }
+
     // Load trixam script after HTML is in DOM
     const scriptId = 'heureka-trixam-script'
-    let existingScript = document.getElementById(scriptId)
+    const existingScript = document.getElementById(scriptId)
 
     if (existingScript) {
+      // Script already exists, just re-initialize
       existingScript.remove()
     }
 
     const script = document.createElement('script')
     script.id = scriptId
-    script.src = '//serve.affiliate.heureka.cz/js/trixam.min.js'
-    script.async = true
+    script.src = 'https://serve.affiliate.heureka.cz/js/trixam.min.js'
+    script.onload = initTrixam
     document.body.appendChild(script)
+
+    return () => {
+      // Cleanup on unmount
+      const scriptToRemove = document.getElementById(scriptId)
+      if (scriptToRemove) {
+        scriptToRemove.remove()
+      }
+    }
   }, [positionId, categoryId, categoryFilters])
 
   return (

@@ -15,6 +15,18 @@ export const mainNavigation: NavItem[] = [
       { label: 'Lokalita', href: '/osb-desky/lokalita' },
     ],
   },
+  {
+    label: 'Barvy a laky',
+    href: '/barvy-a-laky',
+    children: [
+      { label: 'Barvy na zeď', href: '/barvy-a-laky/barvy-na-zed' },
+      { label: 'Barvy na dřevo', href: '/barvy-a-laky/barvy-na-drevo' },
+      { label: 'Barvy na kov', href: '/barvy-a-laky/barvy-na-kov' },
+      { label: 'Interiéry', href: '/barvy-a-laky/barvy-a-laky-na-interiery' },
+      { label: 'Exteriéry', href: '/barvy-a-laky/barvy-a-laky-na-exteriery' },
+      { label: 'Podle značek', href: '/barvy-a-laky/podle-znacek' },
+    ],
+  },
   { label: 'Navody', href: '/navody' },
   { label: 'Dalsi typy desek', href: '/dalsi-typy-desek' },
 ]

@@ -40,7 +40,7 @@ export function getArticleContent(category: string, slug: string): string | null
 
 export function getAllArticles(): Article[] {
   const articles: Article[] = []
-  const categories = ['osb-desky', 'navody', 'dalsi-typy-desek']
+  const categories = ['osb-desky', 'navody', 'dalsi-typy-desek', 'barvy-a-laky']
 
   for (const category of categories) {
     const categoryDir = path.join(contentDirectory, category)

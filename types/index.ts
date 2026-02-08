@@ -2,7 +2,7 @@ export interface Article {
   slug: string
   title: string
   description: string
-  category: 'osb-desky' | 'navody' | 'dalsi-typy-desek'
+  category: 'osb-desky' | 'navody' | 'dalsi-typy-desek' | 'barvy-a-laky'
   subcategory?: string
   keywords: string[]
   relatedArticles?: string[]

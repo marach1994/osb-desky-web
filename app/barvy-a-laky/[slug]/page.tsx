@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
+import HeurekaProductGrid from '@/components/affiliate/HeurekaProductGrid'
 import { barvyLakyCategoryMap, barvyLakyStandaloneArticles, allBarvyLakyArticleSlugs } from '@/lib/barvy-navigation'
 import { getArticleBySlug, getArticleContent, getAllArticles } from '@/lib/mdx'
 import { getRelatedArticles } from '@/lib/related'
@@ -97,6 +98,15 @@ export default async function BarvyALakySlugPage({ params }: Props) {
           ...(catInfo ? [{ label: catInfo.label, href: `/barvy-a-laky/${article.subcategory}` }] : []),
           { label: article.title, href: `/barvy-a-laky/${slug}` },
         ]} />
+
+        {article.heurekaPositionId && article.heurekaCategoryId && (
+          <HeurekaProductGrid
+            key={slug}
+            positionId={article.heurekaPositionId}
+            categoryId={article.heurekaCategoryId}
+            categoryFilters={article.heurekaCategoryFilters}
+          />
+        )}
 
         <div className="prose prose-gray max-w-none">
           <MDXRemote source={content} />

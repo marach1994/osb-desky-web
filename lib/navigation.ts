@@ -24,6 +24,7 @@ export const mainNavigation: NavItem[] = [
       { label: 'Barvy na kov', href: '/barvy-a-laky/barvy-na-kov' },
       { label: 'Interiéry', href: '/barvy-a-laky/barvy-a-laky-na-interiery' },
       { label: 'Exteriéry', href: '/barvy-a-laky/barvy-a-laky-na-exteriery' },
+      { label: 'Ostatní', href: '/barvy-a-laky/ostatni-barvy' },
       { label: 'Podle značek', href: '/barvy-a-laky/podle-znacek' },
     ],
   },

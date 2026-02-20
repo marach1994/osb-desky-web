@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import HeurekaProductGrid from '@/components/affiliate/HeurekaProductGrid'
+import HeurekaAffiliateCategoryBanner from '@/components/affiliate/HeurekaAffiliateCategoryBanner'
 import { barvyLakyCategoryMap, barvyLakyStandaloneArticles, allBarvyLakyArticleSlugs } from '@/lib/barvy-navigation'
 import { getArticleBySlug, getArticleContent, getAllArticles } from '@/lib/mdx'
 import { getRelatedArticles } from '@/lib/related'
@@ -109,7 +110,7 @@ export default async function BarvyALakySlugPage({ params }: Props) {
         )}
 
         <div className="prose prose-gray max-w-none">
-          <MDXRemote source={content} />
+          <MDXRemote source={content} components={{ HeurekaAffiliateCategoryBanner }} />
         </div>
 
         {related.length > 0 && (

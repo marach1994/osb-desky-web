@@ -103,9 +103,13 @@ export default async function BarvyALakySlugPage({ params }: Props) {
         <div className="prose prose-gray max-w-none">
           <MDXRemote source={content} components={{
             HeurekaAffiliateCategoryBanner,
-            HeurekaProductGrid: article.heurekaPositionId && article.heurekaCategoryId
-              ? () => <HeurekaProductGrid positionId={article.heurekaPositionId!} categoryId={article.heurekaCategoryId!} categoryFilters={article.heurekaCategoryFilters} />
-              : () => null,
+            HeurekaProductGrid: (props: { positionId?: string; categoryId?: string; categoryFilters?: string }) => {
+              const pid = props.positionId || article.heurekaPositionId
+              const cid = props.categoryId || article.heurekaCategoryId
+              const cf = props.categoryFilters ?? article.heurekaCategoryFilters
+              if (!pid || !cid) return null
+              return <HeurekaProductGrid positionId={pid} categoryId={cid} categoryFilters={cf} />
+            },
           }} />
         </div>
 

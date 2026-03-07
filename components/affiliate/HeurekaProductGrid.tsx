@@ -60,25 +60,25 @@ export default function HeurekaProductGrid({
         <style>
           * { margin: 0; padding: 0; box-sizing: border-box; }
           body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: transparent; }
-          .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
-          .section-title { font-size: 18px; font-weight: 700; color: #111827; }
-          .footer { text-align: center; margin-top: 20px; }
-          .btn-view-all { display: inline-block; padding: 10px 28px; border: 2px solid #1d4ed8; color: #1d4ed8; font-size: 14px; font-weight: 600; border-radius: 8px; text-decoration: none; white-space: nowrap; }
+          .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+          .section-title { font-size: 15px; font-weight: 700; color: #111827; }
+          .footer { text-align: center; margin-top: 14px; }
+          .btn-view-all { display: inline-block; padding: 6px 18px; border: 1.5px solid #1d4ed8; color: #1d4ed8; font-size: 12px; font-weight: 600; border-radius: 6px; text-decoration: none; white-space: nowrap; }
           .btn-view-all:hover { background: #1d4ed8; color: #fff; }
-          .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-          .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
-          .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-color: #d1d5db; }
-          .card-img-link { display: block; background: #f9fafb; padding: 16px; text-align: center; }
-          .card-img { width: 120px; height: 120px; object-fit: contain; margin: 0 auto; display: block; }
-          .card-body { padding: 12px 16px 16px; display: flex; flex-direction: column; flex: 1; gap: 8px; }
-          .card-title { font-size: 14px; font-weight: 600; color: #111827; text-decoration: none; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+          .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+          .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+          .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-color: #d1d5db; }
+          .card-img-link { display: block; background: #f9fafb; padding: 10px; text-align: center; }
+          .card-img { width: 80px; height: 80px; object-fit: contain; margin: 0 auto; display: block; }
+          .card-body { padding: 8px 10px 10px; display: flex; flex-direction: column; flex: 1; gap: 5px; }
+          .card-title { font-size: 12px; font-weight: 600; color: #111827; text-decoration: none; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
           .card-title:hover { color: #1d4ed8; }
-          .card-price { font-size: 20px; font-weight: 700; color: #111827; margin-top: auto; }
-          .btn-offers { display: block; text-align: center; padding: 10px 0; background: #1d4ed8; color: #fff; font-size: 13px; font-weight: 600; border-radius: 8px; text-decoration: none; margin-top: 4px; }
+          .card-price { font-size: 15px; font-weight: 700; color: #111827; margin-top: auto; }
+          .btn-offers { display: block; text-align: center; padding: 7px 0; background: #1d4ed8; color: #fff; font-size: 11px; font-weight: 600; border-radius: 6px; text-decoration: none; margin-top: 4px; }
           .btn-offers:hover { background: #1e40af; }
           @media (max-width: 700px) {
-            .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            .card-img { width: 80px; height: 80px; }
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .card-img { width: 60px; height: 60px; }
           }
           @media (max-width: 400px) {
             .grid { grid-template-columns: 1fr; }

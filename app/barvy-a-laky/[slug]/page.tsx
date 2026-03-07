@@ -100,17 +100,13 @@ export default async function BarvyALakySlugPage({ params }: Props) {
           { label: article.title, href: `/barvy-a-laky/${slug}` },
         ]} />
 
-        {article.heurekaPositionId && article.heurekaCategoryId && (
-          <HeurekaProductGrid
-            key={slug}
-            positionId={article.heurekaPositionId}
-            categoryId={article.heurekaCategoryId}
-            categoryFilters={article.heurekaCategoryFilters}
-          />
-        )}
-
         <div className="prose prose-gray max-w-none">
-          <MDXRemote source={content} components={{ HeurekaAffiliateCategoryBanner }} />
+          <MDXRemote source={content} components={{
+            HeurekaAffiliateCategoryBanner,
+            HeurekaProductGrid: article.heurekaPositionId && article.heurekaCategoryId
+              ? () => <HeurekaProductGrid positionId={article.heurekaPositionId!} categoryId={article.heurekaCategoryId!} categoryFilters={article.heurekaCategoryFilters} />
+              : () => null,
+          }} />
         </div>
 
         {related.length > 0 && (

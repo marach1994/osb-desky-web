@@ -60,6 +60,10 @@ export default function HeurekaProductGrid({
         <style>
           * { margin: 0; padding: 0; box-sizing: border-box; }
           body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: transparent; }
+          .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+          .section-title { font-size: 18px; font-weight: 700; color: #111827; }
+          .btn-view-all { display: inline-block; padding: 7px 16px; border: 2px solid #1d4ed8; color: #1d4ed8; font-size: 13px; font-weight: 600; border-radius: 8px; text-decoration: none; white-space: nowrap; }
+          .btn-view-all:hover { background: #1d4ed8; color: #fff; }
           .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
           .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
           .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-color: #d1d5db; }
@@ -82,6 +86,10 @@ export default function HeurekaProductGrid({
       </head>
       <body>
         <div class="heureka-affiliate-category" data-trixam-positionid="${positionId}" data-trixam-categoryid="${categoryId}" data-trixam-categoryfilters="${categoryFilters}" data-trixam-codetype="plainhtml" data-trixam-linktarget="top">
+          <div class="section-header">
+            <span class="section-title" data-trixam-databind="text: CategoryAdvert.Data.Category.Name"></span>
+            <a href="#" data-trixam-databind="target: LinkTarget, href: CategoryAdvert.ClickUrl" class="btn-view-all">Zobrazit vše &rarr;</a>
+          </div>
           <div class="grid">
             ${Array.from({ length: 4 }, (_, i) => cardTemplate(i)).join('')}
           </div>
@@ -127,7 +135,6 @@ export default function HeurekaProductGrid({
 
   return (
     <section className="my-6 py-4 px-4 bg-wood-50 rounded-lg border border-wood-200">
-      <h2 className="text-lg font-bold text-gray-900 mb-4">{title}</h2>
       <iframe
         ref={iframeRef}
         style={{ width: '100%', height: '400px', border: 'none' }}

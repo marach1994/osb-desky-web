@@ -4,10 +4,13 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://osb-desky.cz'
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/test-heureka/', '/api/'],
+      },
+    ],
     sitemap: `${SITE_URL}/sitemap.xml`,
   }
 }

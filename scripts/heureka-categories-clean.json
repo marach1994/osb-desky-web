@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Interiérové barvy",
+    "url": "https://interierove-barvy.heureka.cz/",
+    "categoryId": "3555",
+    "children": []
+  },
+  {
+    "name": "Barvy, laky na dřevo",
+    "url": "https://barvy-laky-na-drevo.heureka.cz/",
+    "categoryId": "6393",
+    "children": [
+      {
+        "name": "Lazury a mořidla na dřevo",
+        "url": "https://lazury-moridla-na-drevo.heureka.cz/",
+        "categoryId": "6392"
+      },
+      {
+        "name": "Oleje na dřevo",
+        "url": "https://oleje-na-drevo.heureka.cz/",
+        "categoryId": "6394"
+      },
+      {
+        "name": "Laky na dřevo",
+        "url": "https://laky-na-drevo.heureka.cz/",
+        "categoryId": "6393"
+      },
+      {
+        "name": "Barvy na dřevo",
+        "url": "https://barvy-na-drevo.heureka.cz/",
+        "categoryId": "3554"
+      },
+      {
+        "name": "Vosky na dřevo",
+        "url": "https://vosky-na-drevo.heureka.cz/",
+        "categoryId": "6395"
+      }
+    ]
+  },
+  {
+    "name": "Lazury a mořidla na dřevo",
+    "url": "https://lazury-moridla-na-drevo.heureka.cz/",
+    "categoryId": "6392",
+    "children": []
+  },
+  {
+    "name": "Malířské nářadí a doplňky",
+    "url": "https://malirske-naradi-doplnky.heureka.cz/",
+    "categoryId": "3557",
+    "children": []
+  },
+  {
+    "name": "Barvy na kov",
+    "url": "https://barvy-kov.heureka.cz/",
+    "categoryId": "3553",
+    "children": []
+  },
+  {
+    "name": "Barvy ve spreji",
+    "url": "https://barvy-sprej.heureka.cz/",
+    "categoryId": "3556",
+    "children": []
+  },
+  {
+    "name": "Barvy na beton",
+    "url": "https://barvy-beton.heureka.cz/",
+    "categoryId": "6529",
+    "children": []
+  },
+  {
+    "name": "Ředidla a rozpouštědla",
+    "url": "https://redidla-rozpoustedla.heureka.cz/",
+    "categoryId": "3614",
+    "children": []
+  },
+  {
+    "name": "Fasádní barvy",
+    "url": "https://fasadni-barvy.heureka.cz/",
+    "categoryId": "3538",
+    "children": []
+  },
+  {
+    "name": "Univerzální barvy",
+    "url": "https://univerzalni-barvy.heureka.cz/",
+    "categoryId": "6411",
+    "children": []
+  }
+]

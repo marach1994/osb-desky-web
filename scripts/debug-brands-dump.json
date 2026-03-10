@@ -1,0 +1,335 @@
+{
+  "filterClasses": [
+    "c-filter-group-list",
+    "l-sidebar__filters",
+    "c-search-filter__wrapper",
+    "c-filter__title",
+    "c-search-filter__label",
+    "c-search-filter",
+    "c-filter-group-list__item",
+    "c-filter-group-list__item__header",
+    "c-filter-group-list__item__trigger",
+    "c-filter-group-list__item__content",
+    "c-filter__controls",
+    "c-range-filter",
+    "c-range-filter__controls",
+    "c-filter__list",
+    "c-filter__label",
+    "c-filter__link",
+    "c-rating-filter",
+    "c-rating-filter__rating"
+  ],
+  "headings": [
+    {
+      "tag": "LABEL",
+      "class": "e-label c-filter__title c-search-filter__label",
+      "text": "Vyhledávání v kategorii"
+    },
+    {
+      "tag": "H3",
+      "class": "c-filter-group-list__item__header",
+      "text": "Cena"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "Méně než 600 Kč"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "Méně než 600 Kč"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "600 – 900 Kč"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "600 – 900 Kč"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "900 – 1 600 Kč"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "900 – 1 600 Kč"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "1 600 – 2 100 Kč"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "1 600 – 2 100 Kč"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "2 100 Kč a více"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "2 100 Kč a více"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "Black Friday"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "Black Friday"
+    },
+    {
+      "tag": "STRONG",
+      "class": "",
+      "text": "Black Friday"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "Cenopád"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "Cenopád"
+    },
+    {
+      "tag": "H3",
+      "class": "c-filter-group-list__item__header",
+      "text": "Zákaznické hodnocení"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-radio-group__label",
+      "text": "95 % a více"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-radio-group__label",
+      "text": "90 % a více"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-radio-group__label",
+      "text": "80 % a více"
+    },
+    {
+      "tag": "H3",
+      "class": "c-filter-group-list__item__header",
+      "text": "Dostupnost"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "Skladem"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "Skladem"
+    },
+    {
+      "tag": "H3",
+      "class": "c-filter-group-list__item__header",
+      "text": "Značka"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "HET"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "HET"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "Luxol"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "Luxol"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "Remmers"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "Remmers"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "PNZ"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "PNZ"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "text": "Belinka"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-filter__label",
+      "text": "Belinka"
+    },
+    {
+      "tag": "BUTTON",
+      "class": "c-collapsible__button",
+      "text": "Zobrazit další možnosti"
+    },
+    {
+      "tag": "H3",
+      "class": "c-filter-group-list__item__header",
+      "text": "Druh"
+    },
+    {
+      "tag": "H3",
+      "class": "c-filter-group-list__item__header",
+      "text": "Oblast využití"
+    },
+    {
+      "tag": "H3",
+      "class": "c-filter-group-list__item__header",
+      "text": "Použití"
+    },
+    {
+      "tag": "H3",
+      "class": "c-filter-group-list__item__header",
+      "text": "Báze"
+    }
+  ],
+  "filterLinks": [
+    {
+      "href": "/f:25827:33233356/",
+      "text": "Balakryl",
+      "parentClass": "c-collapsible__item c-categories-list__item",
+      "grandParentClass": "c-categories-list"
+    },
+    {
+      "href": "/f:25827:33233350/",
+      "text": "Luxol",
+      "parentClass": "c-collapsible__item c-categories-list__item",
+      "grandParentClass": "c-categories-list"
+    },
+    {
+      "href": "/f:33866:43681616/",
+      "text": "Vrchní barvy na dřevo",
+      "parentClass": "c-collapsible__item c-categories-list__item",
+      "grandParentClass": "c-categories-list"
+    },
+    {
+      "href": "/f:33866:43681618/",
+      "text": "Krycí barvy na dřevo",
+      "parentClass": "c-collapsible__item c-categories-list__item",
+      "grandParentClass": "c-categories-list"
+    },
+    {
+      "href": "/f:33866:43681617/",
+      "text": "Základové barvy na dřevo",
+      "parentClass": "c-collapsible__item c-categories-list__item",
+      "grandParentClass": "c-categories-list"
+    },
+    {
+      "href": "/f:33767:43545287/",
+      "text": "Syntetické barvy na dřevo",
+      "parentClass": "c-collapsible__item c-categories-list__item",
+      "grandParentClass": "c-categories-list"
+    },
+    {
+      "href": "/f:33767:43545501/",
+      "text": "Olejové barvy na dřevo",
+      "parentClass": "c-collapsible__item c-categories-list__item",
+      "grandParentClass": "c-categories-list"
+    },
+    {
+      "href": "/f:33767:43545502/",
+      "text": "Vodou ředitelné barvy na dřevo",
+      "parentClass": "c-collapsible__item c-categories-list__item",
+      "grandParentClass": "c-categories-list"
+    },
+    {
+      "href": "/f:31369:42680960/",
+      "text": "Nezávadné barvy na dřevo",
+      "parentClass": "c-collapsible__item c-categories-list__item",
+      "grandParentClass": "c-categories-list"
+    },
+    {
+      "href": "https://doplnky-stravy.heureka.cz/f:42510:87989933/",
+      "text": "Britské vitamíny a doplňky stravy",
+      "parentClass": "",
+      "grandParentClass": "l-prefooter__list o-block-list o-block-list--tight"
+    },
+    {
+      "href": "https://sady-s-povlecenim-do-postylek.heureka.cz/f:28721:1/",
+      "text": "Sady s povlečením do postýlek s mantinel",
+      "parentClass": "",
+      "grandParentClass": "l-prefooter__list o-block-list o-block-list--tight"
+    },
+    {
+      "href": "https://prislusenstvi-k-detskym-kuchynkam.heureka.cz/f:29028:41814692/",
+      "text": "Potraviny do dětské kuchyňky",
+      "parentClass": "",
+      "grandParentClass": "l-prefooter__list o-block-list o-block-list--tight"
+    },
+    {
+      "href": "https://barvy-na-drevo.heureka.cz/f:25827:65575245/",
+      "text": "Barvy na dřevo Colorex",
+      "parentClass": "",
+      "grandParentClass": "l-prefooter__list o-block-list o-block-list--tight"
+    },
+    {
+      "href": "https://barvy-na-drevo.heureka.cz/f:25827:33233361/",
+      "text": "Barvy na dřevo Eternal",
+      "parentClass": "",
+      "grandParentClass": "l-prefooter__list o-block-list o-block-list--tight"
+    },
+    {
+      "href": "https://barvy-na-drevo.heureka.cz/f:25827:33233347/",
+      "text": "Barvy na dřevo Stachema",
+      "parentClass": "",
+      "grandParentClass": "l-prefooter__list o-block-list o-block-list--tight"
+    },
+    {
+      "href": "https://barvy-na-drevo.heureka.cz/f:25827:85662963/",
+      "text": "Barvy na dřevo SIKKENS",
+      "parentClass": "",
+      "grandParentClass": "l-prefooter__list o-block-list o-block-list--tight"
+    },
+    {
+      "href": "https://barvy-na-drevo.heureka.cz/f:25827:33233366/",
+      "text": "Barvy na dřevo PNZ",
+      "parentClass": "",
+      "grandParentClass": "l-prefooter__list o-block-list o-block-list--tight"
+    },
+    {
+      "href": "https://mobilni-telefony.heureka.cz/f:26540:51662741/",
+      "text": "Apple iPhone 15",
+      "parentClass": "",
+      "grandParentClass": "l-prefooter__list o-block-list o-block-list--tight"
+    }
+  ],
+  "filterLinksCount": 18
+}

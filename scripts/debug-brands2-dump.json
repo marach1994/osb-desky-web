@@ -1,0 +1,247 @@
+{
+  "html": "<h3 data-orientation=\"vertical\" data-state=\"open\" class=\"c-filter-group-list__item__header\"><a href=\"#znacka\" data-testid=\"filter-group-list-item-trigger\" type=\"button\" aria-controls=\"radix-:Rkkjp:\" aria-expanded=\"true\" data-state=\"open\" data-orientation=\"vertical\" id=\"radix-:R4kjp:\" data-radix-collection-item=\"\" class=\"c-accordion__button c-filter-group-list__item__trigger\"><span class=\"c-accordion__title-prefix\"></span><span class=\"c-accordion__icon c-accordion__icon--arrow\">Značka</span></a></h3><div data-state=\"open\" id=\"radix-:Rkkjp:\" role=\"region\" aria-labelledby=\"radix-:R4kjp:\" data-orientation=\"vertical\" class=\"c-accordion__content c-filter-group-list__item__content\" style=\"--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none; --radix-collapsible-content-height: 222.8125px; --radix-collapsible-content-width: 396.25px;\"><div class=\"c-filter__controls\"><fieldset data-testid=\"multi-select-filter-search-fieldset\"><div class=\"e-input e-input--m\" role=\"button\" tabindex=\"-1\" data-testid=\"Input-input-wrapper\"><input class=\"e-input__native-input\" data-testid=\"Input-input\" placeholder=\"Hledejte v „značka“\" name=\"Značka\" value=\"\"></div></fieldset><div data-testid=\"multi-select-filter-wrapper\"><div class=\"c-collapsible\" data-state=\"closed\" data-testid=\"Collapsible\"><ul class=\"o-block-list o-block-list--tight c-filter__list\" data-testid=\"Collapsible-list\"><li class=\"c-collapsible__item\" data-testid=\"Collapsible-list-item\" aria-hidden=\"false\"><div><div data-testid=\"CheckBox-checkbox\" class=\"c-checkbox c-checkbox--medium c-checkbox--inline\"><button type=\"button\" role=\"checkbox\" aria-checked=\"false\" data-state=\"unchecked\" value=\"33233359\" data-testid=\"CheckBox-input\" class=\"c-checkbox__input c-radio-group__input\" id=\"25827-33233359\"></button><label for=\"25827-33233359\" class=\"e-label c-checkbox__label\" data-testid=\"CheckBox-label\"><div class=\"c-filter__label\"><span class=\"c-filter__link e-counter\" data-count=\"3\">HET</span></div></label></div></div></li><li class=\"c-collapsible__item\" data-testid=\"Collapsible-list-item\" aria-hidden=\"false\"><div><div data-testid=\"CheckBox-checkbox\" class=\"c-checkbox c-checkbox--medium c-checkbox--inline\"><button type=\"button\" role=\"checkbox\" aria-checked=\"false\" data-state=\"unchecked\" value=\"33233350\" data-testid=\"CheckBox-input\" class=\"c-checkbox__input c-radio-group__input\" id=\"25827-33233350\"></button><label for=\"25827-33233350\" class=\"e-label c-checkbox__label\" data-testid=\"CheckBox-label\"><div class=\"c-filter__label\"><span class=\"c-filter__link e-counter\" data-count=\"6\">Luxol</span></div></label></div></div></li><li class=\"c-collapsible__item\" data-testid=\"Collapsible-list-item\" aria-hidden=\"false\"><div><div data-testid=\"CheckBox-checkbox\" class=\"c-checkbox c-checkbox--medium c-checkbox--inline\"><button type=\"button\" role=\"checkbox\" aria-checked=\"false\" data-state=\"unchecked\" val",
+  "aLinks": [
+    {
+      "href": "#znacka",
+      "text": "Značka"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "text",
+      "name": "Značka",
+      "value": "",
+      "id": "",
+      "dataAttrs": "{\"testid\":\"Input-input\"}"
+    }
+  ],
+  "labels": [
+    {
+      "text": "HET",
+      "forAttr": "25827-33233359",
+      "class": "e-label c-checkbox__label"
+    },
+    {
+      "text": "HET",
+      "forAttr": null,
+      "class": "c-filter__label"
+    },
+    {
+      "text": "Luxol",
+      "forAttr": "25827-33233350",
+      "class": "e-label c-checkbox__label"
+    },
+    {
+      "text": "Luxol",
+      "forAttr": null,
+      "class": "c-filter__label"
+    },
+    {
+      "text": "Remmers",
+      "forAttr": "25827-42681805",
+      "class": "e-label c-checkbox__label"
+    },
+    {
+      "text": "Remmers",
+      "forAttr": null,
+      "class": "c-filter__label"
+    },
+    {
+      "text": "PNZ",
+      "forAttr": "25827-33233366",
+      "class": "e-label c-checkbox__label"
+    },
+    {
+      "text": "PNZ",
+      "forAttr": null,
+      "class": "c-filter__label"
+    },
+    {
+      "text": "Belinka",
+      "forAttr": "25827-42676888",
+      "class": "e-label c-checkbox__label"
+    },
+    {
+      "text": "Belinka",
+      "forAttr": null,
+      "class": "c-filter__label"
+    }
+  ],
+  "dataAttrs": [
+    {
+      "tag": "H3",
+      "class": "c-filter-group-list__item__header",
+      "dataset": "{\"orientation\":\"vertical\",\"state\":\"open\"}"
+    },
+    {
+      "tag": "A",
+      "class": "c-accordion__button c-filter-group-list_",
+      "dataset": "{\"testid\":\"filter-group-list-item-trigger\",\"state\":\"open\",\"orientation\":\"vertical\",\"radixCollectionI"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-accordion__content c-filter-group-list",
+      "dataset": "{\"state\":\"open\",\"orientation\":\"vertical\"}"
+    },
+    {
+      "tag": "FIELDSET",
+      "class": "",
+      "dataset": "{\"testid\":\"multi-select-filter-search-fieldset\"}"
+    },
+    {
+      "tag": "DIV",
+      "class": "e-input e-input--m",
+      "dataset": "{\"testid\":\"Input-input-wrapper\"}"
+    },
+    {
+      "tag": "INPUT",
+      "class": "e-input__native-input",
+      "dataset": "{\"testid\":\"Input-input\"}"
+    },
+    {
+      "tag": "DIV",
+      "class": "",
+      "dataset": "{\"testid\":\"multi-select-filter-wrapper\"}"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-collapsible",
+      "dataset": "{\"state\":\"closed\",\"testid\":\"Collapsible\"}"
+    },
+    {
+      "tag": "UL",
+      "class": "o-block-list o-block-list--tight c-filte",
+      "dataset": "{\"testid\":\"Collapsible-list\"}"
+    },
+    {
+      "tag": "LI",
+      "class": "c-collapsible__item",
+      "dataset": "{\"testid\":\"Collapsible-list-item\"}"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-checkbox c-checkbox--medium c-checkbox",
+      "dataset": "{\"testid\":\"CheckBox-checkbox\"}"
+    },
+    {
+      "tag": "BUTTON",
+      "class": "c-checkbox__input c-radio-group__input",
+      "dataset": "{\"state\":\"unchecked\",\"testid\":\"CheckBox-input\"}"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "dataset": "{\"testid\":\"CheckBox-label\"}"
+    },
+    {
+      "tag": "SPAN",
+      "class": "c-filter__link e-counter",
+      "dataset": "{\"count\":\"3\"}"
+    },
+    {
+      "tag": "LI",
+      "class": "c-collapsible__item",
+      "dataset": "{\"testid\":\"Collapsible-list-item\"}"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-checkbox c-checkbox--medium c-checkbox",
+      "dataset": "{\"testid\":\"CheckBox-checkbox\"}"
+    },
+    {
+      "tag": "BUTTON",
+      "class": "c-checkbox__input c-radio-group__input",
+      "dataset": "{\"state\":\"unchecked\",\"testid\":\"CheckBox-input\"}"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "dataset": "{\"testid\":\"CheckBox-label\"}"
+    },
+    {
+      "tag": "SPAN",
+      "class": "c-filter__link e-counter",
+      "dataset": "{\"count\":\"6\"}"
+    },
+    {
+      "tag": "LI",
+      "class": "c-collapsible__item",
+      "dataset": "{\"testid\":\"Collapsible-list-item\"}"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-checkbox c-checkbox--medium c-checkbox",
+      "dataset": "{\"testid\":\"CheckBox-checkbox\"}"
+    },
+    {
+      "tag": "BUTTON",
+      "class": "c-checkbox__input c-radio-group__input",
+      "dataset": "{\"state\":\"unchecked\",\"testid\":\"CheckBox-input\"}"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "dataset": "{\"testid\":\"CheckBox-label\"}"
+    },
+    {
+      "tag": "SPAN",
+      "class": "c-filter__link e-counter",
+      "dataset": "{\"count\":\"118\"}"
+    },
+    {
+      "tag": "LI",
+      "class": "c-collapsible__item",
+      "dataset": "{\"testid\":\"Collapsible-list-item\"}"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-checkbox c-checkbox--medium c-checkbox",
+      "dataset": "{\"testid\":\"CheckBox-checkbox\"}"
+    },
+    {
+      "tag": "BUTTON",
+      "class": "c-checkbox__input c-radio-group__input",
+      "dataset": "{\"state\":\"unchecked\",\"testid\":\"CheckBox-input\"}"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "dataset": "{\"testid\":\"CheckBox-label\"}"
+    },
+    {
+      "tag": "SPAN",
+      "class": "c-filter__link e-counter",
+      "dataset": "{\"count\":\"12\"}"
+    },
+    {
+      "tag": "LI",
+      "class": "c-collapsible__item",
+      "dataset": "{\"testid\":\"Collapsible-list-item\"}"
+    },
+    {
+      "tag": "DIV",
+      "class": "c-checkbox c-checkbox--medium c-checkbox",
+      "dataset": "{\"testid\":\"CheckBox-checkbox\"}"
+    },
+    {
+      "tag": "BUTTON",
+      "class": "c-checkbox__input c-radio-group__input",
+      "dataset": "{\"state\":\"unchecked\",\"testid\":\"CheckBox-input\"}"
+    },
+    {
+      "tag": "LABEL",
+      "class": "e-label c-checkbox__label",
+      "dataset": "{\"testid\":\"CheckBox-label\"}"
+    },
+    {
+      "tag": "SPAN",
+      "class": "c-filter__link e-counter",
+      "dataset": "{\"count\":\"1\"}"
+    },
+    {
+      "tag": "BUTTON",
+      "class": "c-collapsible__button",
+      "dataset": "{\"count\":\"26\",\"testid\":\"Collapsible-button\"}"
+    }
+  ]
+}

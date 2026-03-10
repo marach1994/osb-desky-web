@@ -42,11 +42,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   // Otherwise it's an article
   const article = getArticleBySlug('osb-desky', slug)
-  if (article) {
+  const content = getArticleContent('osb-desky', slug)
+  if (article && content) {
     return generateArticleMetadata(article, `/osb-desky/${slug}`)
   }
 
-  return {}
+  return { robots: { index: false, follow: true } }
 }
 
 export default async function OsbDeskySlugPage({ params }: Props) {

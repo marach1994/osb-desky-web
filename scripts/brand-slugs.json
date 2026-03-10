@@ -1,0 +1,1327 @@
+Total unique brand slugs: 331
+[
+  {
+    "slug": "4cr",
+    "label": "4CR"
+  },
+  {
+    "slug": "a-s-creation",
+    "label": "A.S. Création"
+  },
+  {
+    "slug": "abamal",
+    "label": "Abamal"
+  },
+  {
+    "slug": "aci",
+    "label": "ACI"
+  },
+  {
+    "slug": "adler-cesko",
+    "label": "Adler Česko"
+  },
+  {
+    "slug": "aerosol-service",
+    "label": "Aerosol - service"
+  },
+  {
+    "slug": "ag-termopasty",
+    "label": "AG TERMOPASTY"
+  },
+  {
+    "slug": "agama",
+    "label": "Agama"
+  },
+  {
+    "slug": "aktidrevin",
+    "label": "Aktidřevin"
+  },
+  {
+    "slug": "akzo",
+    "label": "Akzo"
+  },
+  {
+    "slug": "akzo-nobel",
+    "label": "Akzo Nobel"
+  },
+  {
+    "slug": "alfachem",
+    "label": "Alfachem"
+  },
+  {
+    "slug": "alkapren",
+    "label": "Alkapren"
+  },
+  {
+    "slug": "alkyton",
+    "label": "Alkyton"
+  },
+  {
+    "slug": "amarit",
+    "label": "Amarit"
+  },
+  {
+    "slug": "apipol-wax",
+    "label": "Apipol-Wax"
+  },
+  {
+    "slug": "articolor",
+    "label": "Articolor"
+  },
+  {
+    "slug": "atlas",
+    "label": "Atlas"
+  },
+  {
+    "slug": "aug-hedinger",
+    "label": "Aug Hedinger"
+  },
+  {
+    "slug": "auson",
+    "label": "Auson"
+  },
+  {
+    "slug": "austis",
+    "label": "Austis"
+  },
+  {
+    "slug": "auto-max",
+    "label": "Auto-max"
+  },
+  {
+    "slug": "av-equen",
+    "label": "AV EQUEN"
+  },
+  {
+    "slug": "bakrylex",
+    "label": "Bakrylex"
+  },
+  {
+    "slug": "bal-hostivar",
+    "label": "Bal Hostivař"
+  },
+  {
+    "slug": "bal-teluria",
+    "label": "Bal Teluria"
+  },
+  {
+    "slug": "balakryl",
+    "label": "Balakryl"
+  },
+  {
+    "slug": "baltech",
+    "label": "Baltech"
+  },
+  {
+    "slug": "barlet",
+    "label": "Barlet"
+  },
+  {
+    "slug": "barvy-a-laky-hostivar",
+    "label": "Barvy a Laky Hostivař"
+  },
+  {
+    "slug": "barvy-a-laky-teluria",
+    "label": "Barvy a laky Teluria"
+  },
+  {
+    "slug": "barvy-herman",
+    "label": "Barvy Herman"
+  },
+  {
+    "slug": "barvy-plus",
+    "label": "Barvy Plus"
+  },
+  {
+    "slug": "baumit",
+    "label": "Baumit"
+  },
+  {
+    "slug": "bbb-barvy",
+    "label": "BBB barvy"
+  },
+  {
+    "slug": "becher-profi",
+    "label": "Becher Profi"
+  },
+  {
+    "slug": "belinka",
+    "label": "Belinka"
+  },
+  {
+    "slug": "bigstone",
+    "label": "Bigstone"
+  },
+  {
+    "slug": "bione-cosmetics",
+    "label": "BIONE cosmetics"
+  },
+  {
+    "slug": "bisil",
+    "label": "Bisil"
+  },
+  {
+    "slug": "bkp-group",
+    "label": "BKP GROUP"
+  },
+  {
+    "slug": "body-color",
+    "label": "Body Color"
+  },
+  {
+    "slug": "bochemit",
+    "label": "Bochemit"
+  },
+  {
+    "slug": "bolix",
+    "label": "Bolix"
+  },
+  {
+    "slug": "boll",
+    "label": "BOLL"
+  },
+  {
+    "slug": "bona",
+    "label": "Bona"
+  },
+  {
+    "slug": "bondex",
+    "label": "Bondex"
+  },
+  {
+    "slug": "bondex-white-spirit",
+    "label": "BONDEX WHITE SPIRIT"
+  },
+  {
+    "slug": "boretech",
+    "label": "BoreTech"
+  },
+  {
+    "slug": "bori",
+    "label": "Bori"
+  },
+  {
+    "slug": "borma-wachs",
+    "label": "Borma Wachs"
+  },
+  {
+    "slug": "brunox",
+    "label": "Brunox"
+  },
+  {
+    "slug": "bsa",
+    "label": "BSA"
+  },
+  {
+    "slug": "building-plast",
+    "label": "Building Plast"
+  },
+  {
+    "slug": "buldok-new",
+    "label": "BULDOK new"
+  },
+  {
+    "slug": "caparol",
+    "label": "Caparol"
+  },
+  {
+    "slug": "carfit",
+    "label": "Carfit"
+  },
+  {
+    "slug": "carline",
+    "label": "CARLINE"
+  },
+  {
+    "slug": "carlson",
+    "label": "Carlson"
+  },
+  {
+    "slug": "cb-chemie-servisni",
+    "label": "CB Chemie Servisní"
+  },
+  {
+    "slug": "cemix",
+    "label": "Cemix"
+  },
+  {
+    "slug": "certak",
+    "label": "Čerťák"
+  },
+  {
+    "slug": "cesky-stavitel",
+    "label": "ČESKÝ STAVITEL"
+  },
+  {
+    "slug": "ciranova",
+    "label": "Ciranova"
+  },
+  {
+    "slug": "citon",
+    "label": "Citon"
+  },
+  {
+    "slug": "cleamen",
+    "label": "Cleamen"
+  },
+  {
+    "slug": "clou",
+    "label": "Clou"
+  },
+  {
+    "slug": "color-company",
+    "label": "Color Company"
+  },
+  {
+    "slug": "colorcity",
+    "label": "ColorCity"
+  },
+  {
+    "slug": "colorex",
+    "label": "Colorex"
+  },
+  {
+    "slug": "colorlak",
+    "label": "Colorlak"
+  },
+  {
+    "slug": "complex-josef-schellhorn",
+    "label": "Complex - Josef Schellhorn"
+  },
+  {
+    "slug": "coyote",
+    "label": "COYOTE"
+  },
+  {
+    "slug": "cyklon",
+    "label": "CYKLON"
+  },
+  {
+    "slug": "dakota-living",
+    "label": "Dakota Living"
+  },
+  {
+    "slug": "dawex-chemical",
+    "label": "Dawex Chemical"
+  },
+  {
+    "slug": "debeer",
+    "label": "DEBEER"
+  },
+  {
+    "slug": "deerfos",
+    "label": "Deerfos"
+  },
+  {
+    "slug": "dekfinish",
+    "label": "Dekfinish"
+  },
+  {
+    "slug": "dekoral",
+    "label": "Dekoral"
+  },
+  {
+    "slug": "den-braven",
+    "label": "Den Braven"
+  },
+  {
+    "slug": "denas",
+    "label": "Denas"
+  },
+  {
+    "slug": "denas-color",
+    "label": "Denas Color"
+  },
+  {
+    "slug": "detecha",
+    "label": "Detecha"
+  },
+  {
+    "slug": "dexoll",
+    "label": "Dexoll"
+  },
+  {
+    "slug": "df-partner",
+    "label": "DF Partner"
+  },
+  {
+    "slug": "dictum",
+    "label": "Dictum"
+  },
+  {
+    "slug": "dispechem",
+    "label": "Dispechem"
+  },
+  {
+    "slug": "distrimo",
+    "label": "DISTRIMO"
+  },
+  {
+    "slug": "druchema",
+    "label": "Druchema"
+  },
+  {
+    "slug": "druchema-lihove-moridlo",
+    "label": "Druchema Lihové mořidlo"
+  },
+  {
+    "slug": "dufa",
+    "label": "Düfa"
+  },
+  {
+    "slug": "dulux",
+    "label": "Dulux"
+  },
+  {
+    "slug": "dupli-color",
+    "label": "Dupli Color"
+  },
+  {
+    "slug": "dynacoat",
+    "label": "Dynacoat"
+  },
+  {
+    "slug": "eco-solutions-limited",
+    "label": "Eco-Solutions Limited"
+  },
+  {
+    "slug": "ecofol",
+    "label": "ECOFOL"
+  },
+  {
+    "slug": "ecoliquid",
+    "label": "Ecoliquid"
+  },
+  {
+    "slug": "elchemco",
+    "label": "ELCHEMCo"
+  },
+  {
+    "slug": "envichem",
+    "label": "EnviChem"
+  },
+  {
+    "slug": "ep-vernici",
+    "label": "Ep Vernici"
+  },
+  {
+    "slug": "epolex",
+    "label": "Epolex"
+  },
+  {
+    "slug": "estetik",
+    "label": "Estetik"
+  },
+  {
+    "slug": "eternal",
+    "label": "Eternal"
+  },
+  {
+    "slug": "euronaradi",
+    "label": "Euronářadí"
+  },
+  {
+    "slug": "expert-line",
+    "label": "EXPERT LINE"
+  },
+  {
+    "slug": "faren",
+    "label": "Faren"
+  },
+  {
+    "slug": "farmicol-spa",
+    "label": "Farmicol SpA"
+  },
+  {
+    "slug": "farrow-ball",
+    "label": "Farrow & Ball"
+  },
+  {
+    "slug": "ferdus",
+    "label": "Ferdus"
+  },
+  {
+    "slug": "finalit",
+    "label": "Finalit"
+  },
+  {
+    "slug": "finess",
+    "label": "Finess"
+  },
+  {
+    "slug": "finkolora",
+    "label": "Finkolora"
+  },
+  {
+    "slug": "flagon",
+    "label": "Flagon"
+  },
+  {
+    "slug": "flugger",
+    "label": "Flügger"
+  },
+  {
+    "slug": "fn-nano",
+    "label": "FN NANO"
+  },
+  {
+    "slug": "forch",
+    "label": "FORCH"
+  },
+  {
+    "slug": "fortekryl",
+    "label": "Fortekryl"
+  },
+  {
+    "slug": "fox",
+    "label": "Fox"
+  },
+  {
+    "slug": "fronton",
+    "label": "Fronton"
+  },
+  {
+    "slug": "gotherm",
+    "label": "GoTherm"
+  },
+  {
+    "slug": "granit",
+    "label": "Granit"
+  },
+  {
+    "slug": "gutta",
+    "label": "Gutta"
+  },
+  {
+    "slug": "hadex",
+    "label": "Hadex"
+  },
+  {
+    "slug": "hahn-color",
+    "label": "Hahn Color"
+  },
+  {
+    "slug": "hammerite",
+    "label": "Hammerite"
+  },
+  {
+    "slug": "havlicek-truhlarstvi",
+    "label": "Havlíček truhlářství"
+  },
+  {
+    "slug": "hb-lak",
+    "label": "HB-Lak"
+  },
+  {
+    "slug": "helios",
+    "label": "Helios"
+  },
+  {
+    "slug": "henkel",
+    "label": "Henkel"
+  },
+  {
+    "slug": "herbol",
+    "label": "Herbol"
+  },
+  {
+    "slug": "het",
+    "label": "Het"
+  },
+  {
+    "slug": "hf-market",
+    "label": "HF Market"
+  },
+  {
+    "slug": "hf-servis",
+    "label": "HF servis"
+  },
+  {
+    "slug": "hg",
+    "label": "HG"
+  },
+  {
+    "slug": "hlubna",
+    "label": "HLUBNA"
+  },
+  {
+    "slug": "hokr",
+    "label": "Hokr"
+  },
+  {
+    "slug": "hornbach",
+    "label": "Hornbach"
+  },
+  {
+    "slug": "hostagrund",
+    "label": "Hostagrund"
+  },
+  {
+    "slug": "howard-products",
+    "label": "Howard Products"
+  },
+  {
+    "slug": "hyperticus-bio",
+    "label": "Hyperticus Bio"
+  },
+  {
+    "slug": "chamaeleon",
+    "label": "CHAMAELEON"
+  },
+  {
+    "slug": "chamaleon",
+    "label": "Chamaleon"
+  },
+  {
+    "slug": "chemolak",
+    "label": "Chemolak"
+  },
+  {
+    "slug": "chemoxyl",
+    "label": "Chemoxyl"
+  },
+  {
+    "slug": "chromos",
+    "label": "Chromos"
+  },
+  {
+    "slug": "chytra-zed",
+    "label": "Chytrá zeď"
+  },
+  {
+    "slug": "icla",
+    "label": "Icla"
+  },
+  {
+    "slug": "impranal",
+    "label": "Impranal"
+  },
+  {
+    "slug": "industrit",
+    "label": "Industrit"
+  },
+  {
+    "slug": "industrol",
+    "label": "Industrol"
+  },
+  {
+    "slug": "inhicor",
+    "label": "Inhicor"
+  },
+  {
+    "slug": "intercut",
+    "label": "Intercut"
+  },
+  {
+    "slug": "izomat-stavebniny",
+    "label": "IZOMAT stavebniny"
+  },
+  {
+    "slug": "jansen",
+    "label": "Jansen"
+  },
+  {
+    "slug": "jeger",
+    "label": "Jeger"
+  },
+  {
+    "slug": "johnstone-s",
+    "label": "Johnstone´s"
+  },
+  {
+    "slug": "johnstones",
+    "label": "JOHNSTONES"
+  },
+  {
+    "slug": "jub",
+    "label": "Jub"
+  },
+  {
+    "slug": "jupol",
+    "label": "Jupol"
+  },
+  {
+    "slug": "k-n-filters",
+    "label": "K&N Filters"
+  },
+  {
+    "slug": "kabe",
+    "label": "Kabe"
+  },
+  {
+    "slug": "kana",
+    "label": "Kana"
+  },
+  {
+    "slug": "kansai-helios",
+    "label": "Kansai Helios"
+  },
+  {
+    "slug": "karcher",
+    "label": "Karcher"
+  },
+  {
+    "slug": "kavan",
+    "label": "Kavan"
+  },
+  {
+    "slug": "khb-keramika",
+    "label": "KHB Keramika"
+  },
+  {
+    "slug": "kittfort",
+    "label": "Kittfort"
+  },
+  {
+    "slug": "klumpp-coatings",
+    "label": "Klumpp Coatings"
+  },
+  {
+    "slug": "km-plus",
+    "label": "KM PLUS"
+  },
+  {
+    "slug": "knauf-insulation",
+    "label": "Knauf insulation"
+  },
+  {
+    "slug": "koh-i-noor",
+    "label": "Koh-i-noor"
+  },
+  {
+    "slug": "koopmans",
+    "label": "Koopmans"
+  },
+  {
+    "slug": "kreul",
+    "label": "Kreul"
+  },
+  {
+    "slug": "kwasny",
+    "label": "Kwasny"
+  },
+  {
+    "slug": "labar",
+    "label": "Labar"
+  },
+  {
+    "slug": "lachner",
+    "label": "Lachner"
+  },
+  {
+    "slug": "lazurol",
+    "label": "Lazurol"
+  },
+  {
+    "slug": "lefranc-amp-bourgeois",
+    "label": "Lefranc amp Bourgeois"
+  },
+  {
+    "slug": "lefranc-amp-bourgeois-2",
+    "label": "Lefranc amp Bourgeois 2"
+  },
+  {
+    "slug": "leinos",
+    "label": "Leinos"
+  },
+  {
+    "slug": "lesonal",
+    "label": "Lesonal"
+  },
+  {
+    "slug": "lignofix",
+    "label": "Lignofix"
+  },
+  {
+    "slug": "liqui-moly",
+    "label": "LIQUI MOLY"
+  },
+  {
+    "slug": "lithofin",
+    "label": "LITHOFIN"
+  },
+  {
+    "slug": "loba",
+    "label": "Loba"
+  },
+  {
+    "slug": "lucebni-zavody",
+    "label": "Lučební závody"
+  },
+  {
+    "slug": "lucebni-zavody-kolin",
+    "label": "Lučební závody Kolín"
+  },
+  {
+    "slug": "luxdecor",
+    "label": "LuxDecor"
+  },
+  {
+    "slug": "luxol",
+    "label": "Luxol"
+  },
+  {
+    "slug": "m-kavis",
+    "label": "M-Kavis"
+  },
+  {
+    "slug": "malir",
+    "label": "Malíř"
+  },
+  {
+    "slug": "mapei",
+    "label": "Mapei"
+  },
+  {
+    "slug": "marty-s",
+    "label": "Marty’s"
+  },
+  {
+    "slug": "mastersil",
+    "label": "Mastersil"
+  },
+  {
+    "slug": "mat-group",
+    "label": "MAT GROUP"
+  },
+  {
+    "slug": "meffert",
+    "label": "Meffert"
+  },
+  {
+    "slug": "metrum",
+    "label": "METRUM"
+  },
+  {
+    "slug": "mipa",
+    "label": "Mipa"
+  },
+  {
+    "slug": "modulan",
+    "label": "Modulan"
+  },
+  {
+    "slug": "montana-cans",
+    "label": "Montana Cans"
+  },
+  {
+    "slug": "morys",
+    "label": "Morys"
+  },
+  {
+    "slug": "motip",
+    "label": "Motip"
+  },
+  {
+    "slug": "murexin",
+    "label": "Murexin"
+  },
+  {
+    "slug": "nanolab",
+    "label": "Nanolab"
+  },
+  {
+    "slug": "nanoprotech",
+    "label": "Nanoprotech"
+  },
+  {
+    "slug": "neotex",
+    "label": "Neotex"
+  },
+  {
+    "slug": "novochema",
+    "label": "Novochema"
+  },
+  {
+    "slug": "novol",
+    "label": "Novol"
+  },
+  {
+    "slug": "obi",
+    "label": "Obi"
+  },
+  {
+    "slug": "odie-s",
+    "label": "Odie’s"
+  },
+  {
+    "slug": "okko",
+    "label": "Okko"
+  },
+  {
+    "slug": "oli-natura",
+    "label": "Oli-Natura"
+  },
+  {
+    "slug": "orlen",
+    "label": "ORLEN"
+  },
+  {
+    "slug": "osmo",
+    "label": "Osmo"
+  },
+  {
+    "slug": "owatrol",
+    "label": "Owatrol"
+  },
+  {
+    "slug": "p-s-r",
+    "label": "P.S.R."
+  },
+  {
+    "slug": "pallmann",
+    "label": "Pallmann"
+  },
+  {
+    "slug": "pattex",
+    "label": "Pattex"
+  },
+  {
+    "slug": "pebeo",
+    "label": "Pébéo"
+  },
+  {
+    "slug": "pellachrom",
+    "label": "Pellachrom"
+  },
+  {
+    "slug": "penosil",
+    "label": "PENOSIL"
+  },
+  {
+    "slug": "pentart",
+    "label": "Pentart"
+  },
+  {
+    "slug": "perdix",
+    "label": "Perdix"
+  },
+  {
+    "slug": "petec",
+    "label": "PETEC"
+  },
+  {
+    "slug": "pg",
+    "label": "PG"
+  },
+  {
+    "slug": "plastservis",
+    "label": "Plastservis"
+  },
+  {
+    "slug": "pnz",
+    "label": "PNZ"
+  },
+  {
+    "slug": "polykar",
+    "label": "Polykar"
+  },
+  {
+    "slug": "poola",
+    "label": "Poola"
+  },
+  {
+    "slug": "pragoprimer-standard",
+    "label": "Pragoprimer Standard"
+  },
+  {
+    "slug": "praktik",
+    "label": "Praktik"
+  },
+  {
+    "slug": "presto",
+    "label": "Presto"
+  },
+  {
+    "slug": "primacol",
+    "label": "Primacol"
+  },
+  {
+    "slug": "primalex",
+    "label": "Primalex"
+  },
+  {
+    "slug": "prince-color",
+    "label": "PRINCE COLOR"
+  },
+  {
+    "slug": "pro-doma",
+    "label": "Pro-Doma"
+  },
+  {
+    "slug": "pro-tech",
+    "label": "Pro-Tech"
+  },
+  {
+    "slug": "profi-color",
+    "label": "Profi Color"
+  },
+  {
+    "slug": "progold",
+    "label": "PROGold"
+  },
+  {
+    "slug": "prolux",
+    "label": "Prolux"
+  },
+  {
+    "slug": "proxim",
+    "label": "PROXIM"
+  },
+  {
+    "slug": "pufas",
+    "label": "PUFAS"
+  },
+  {
+    "slug": "q-cover",
+    "label": "Q-Cover"
+  },
+  {
+    "slug": "relius",
+    "label": "Relius"
+  },
+  {
+    "slug": "rem-lack-bis",
+    "label": "REM-LACK BIS"
+  },
+  {
+    "slug": "remakol",
+    "label": "Remakol"
+  },
+  {
+    "slug": "remal",
+    "label": "Remal"
+  },
+  {
+    "slug": "rembradtin",
+    "label": "Rembradtin"
+  },
+  {
+    "slug": "remmers",
+    "label": "Remmers"
+  },
+  {
+    "slug": "renesans",
+    "label": "Renesans"
+  },
+  {
+    "slug": "renolast",
+    "label": "Renolast"
+  },
+  {
+    "slug": "revell",
+    "label": "Revell"
+  },
+  {
+    "slug": "riapower",
+    "label": "RIApower"
+  },
+  {
+    "slug": "roko",
+    "label": "Roko"
+  },
+  {
+    "slug": "rokosil-aqua",
+    "label": "Rokosil Aqua"
+  },
+  {
+    "slug": "rokospol",
+    "label": "Rokospol"
+  },
+  {
+    "slug": "rosner",
+    "label": "Rosner"
+  },
+  {
+    "slug": "rubio-monocoat",
+    "label": "Rubio Monocoat"
+  },
+  {
+    "slug": "rust-oleum",
+    "label": "Rust-Oleum"
+  },
+  {
+    "slug": "rustbreaker",
+    "label": "Rustbreaker"
+  },
+  {
+    "slug": "sadolin",
+    "label": "Sadolin"
+  },
+  {
+    "slug": "saicos",
+    "label": "Saicos"
+  },
+  {
+    "slug": "saint-gobain",
+    "label": "Saint-Gobain"
+  },
+  {
+    "slug": "san-marco",
+    "label": "San Marco"
+  },
+  {
+    "slug": "sanax",
+    "label": "Sanax"
+  },
+  {
+    "slug": "scandicare",
+    "label": "Scandicare"
+  },
+  {
+    "slug": "scandiccare",
+    "label": "Scandiccare"
+  },
+  {
+    "slug": "sedlecky-kaolin",
+    "label": "Sedlecký kaolin"
+  },
+  {
+    "slug": "select",
+    "label": "SELECT"
+  },
+  {
+    "slug": "selection",
+    "label": "Selection"
+  },
+  {
+    "slug": "sennelier",
+    "label": "Sennelier"
+  },
+  {
+    "slug": "severochema",
+    "label": "Severochema"
+  },
+  {
+    "slug": "sheron",
+    "label": "SHERON"
+  },
+  {
+    "slug": "schmincke",
+    "label": "Schmincke"
+  },
+  {
+    "slug": "schoner-wohnen",
+    "label": "Schöner Wohnen"
+  },
+  {
+    "slug": "schuller",
+    "label": "Schuller"
+  },
+  {
+    "slug": "schuller-eh-klar",
+    "label": "Schuller Eh’klar"
+  },
+  {
+    "slug": "sigma",
+    "label": "Sigma"
+  },
+  {
+    "slug": "signocryl",
+    "label": "Signocryl"
+  },
+  {
+    "slug": "sika",
+    "label": "Sika"
+  },
+  {
+    "slug": "sikkens",
+    "label": "Sikkens"
+  },
+  {
+    "slug": "slovlak",
+    "label": "Slovlak"
+  },
+  {
+    "slug": "sniezka",
+    "label": "Sniezka"
+  },
+  {
+    "slug": "sokrates",
+    "label": "Sokrates"
+  },
+  {
+    "slug": "soudal",
+    "label": "Soudal"
+  },
+  {
+    "slug": "spektrum",
+    "label": "Spektrum"
+  },
+  {
+    "slug": "spies-hecker",
+    "label": "Spies Hecker"
+  },
+  {
+    "slug": "sps",
+    "label": "SPS"
+  },
+  {
+    "slug": "stahlmann",
+    "label": "Stahlmann"
+  },
+  {
+    "slug": "stachema",
+    "label": "Stachema"
+  },
+  {
+    "slug": "stavebniny-dek",
+    "label": "Stavebniny DEK"
+  },
+  {
+    "slug": "stefan-kupietz-cokg",
+    "label": "Stefan Kupietz & CoKG"
+  },
+  {
+    "slug": "stylecolor",
+    "label": "StyleColor"
+  },
+  {
+    "slug": "supermal",
+    "label": "Supermal"
+  },
+  {
+    "slug": "supralux",
+    "label": "Supralux"
+  },
+  {
+    "slug": "swingcolor",
+    "label": "Swingcolor"
+  },
+  {
+    "slug": "synteko",
+    "label": "Synteko"
+  },
+  {
+    "slug": "tecmaxx",
+    "label": "TECMAXX"
+  },
+  {
+    "slug": "teluria",
+    "label": "Teluria"
+  },
+  {
+    "slug": "tesa",
+    "label": "TESA"
+  },
+  {
+    "slug": "thermilate",
+    "label": "Thermilate"
+  },
+  {
+    "slug": "tikkurila",
+    "label": "Tikkurila"
+  },
+  {
+    "slug": "tkk",
+    "label": "TKK"
+  },
+  {
+    "slug": "topekor",
+    "label": "Topekor"
+  },
+  {
+    "slug": "topstone",
+    "label": "TOPSTONE"
+  },
+  {
+    "slug": "tremco-cpg",
+    "label": "Tremco CPG"
+  },
+  {
+    "slug": "trikolor",
+    "label": "Trikolor"
+  },
+  {
+    "slug": "u-pepanka",
+    "label": "U Pepánka"
+  },
+  {
+    "slug": "uni-hobby",
+    "label": "Uni Hobby"
+  },
+  {
+    "slug": "unibal",
+    "label": "Unibal"
+  },
+  {
+    "slug": "v-i-p-italy",
+    "label": "V.I.P. Italy"
+  },
+  {
+    "slug": "velvana",
+    "label": "Velvana"
+  },
+  {
+    "slug": "venti",
+    "label": "Venti"
+  },
+  {
+    "slug": "vip-italy",
+    "label": "VIP Italy"
+  },
+  {
+    "slug": "vitex",
+    "label": "Vitex"
+  },
+  {
+    "slug": "viton",
+    "label": "VITON"
+  },
+  {
+    "slug": "vivechrom",
+    "label": "Vivechrom"
+  },
+  {
+    "slug": "walrus-oil",
+    "label": "Walrus Oil"
+  },
+  {
+    "slug": "weber",
+    "label": "Weber"
+  },
+  {
+    "slug": "weber-terranova",
+    "label": "Weber Terranova"
+  },
+  {
+    "slug": "wilckens",
+    "label": "Wilckens"
+  },
+  {
+    "slug": "wildschek",
+    "label": "Wildschek"
+  },
+  {
+    "slug": "winsor-newton",
+    "label": "Winsor & Newton"
+  },
+  {
+    "slug": "woca",
+    "label": "Woca"
+  },
+  {
+    "slug": "woldoclean",
+    "label": "WoldoClean"
+  },
+  {
+    "slug": "wolfcraft",
+    "label": "Wolfcraft"
+  },
+  {
+    "slug": "wood-guard",
+    "label": "Wood Guard"
+  },
+  {
+    "slug": "wurth",
+    "label": "Würth"
+  },
+  {
+    "slug": "xyladecor",
+    "label": "Xyladecor"
+  },
+  {
+    "slug": "zinsser",
+    "label": "ZINSSER"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "OSB desky - hlavní stránka",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "",
+    "page": "/osb-desky",
+    "createdAt": "2026-03-17T17:31:41.492Z"
+  },
+  {
+    "name": "OSB desky - podle síly",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "",
+    "page": "/osb-desky/podle-silly",
+    "createdAt": "2026-03-17T17:31:46.796Z"
+  },
+  {
+    "name": "OSB desky 8mm",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "",
+    "page": "/osb-desky/8mm",
+    "createdAt": "2026-03-17T17:31:51.832Z"
+  },
+  {
+    "name": "OSB desky 12mm",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "",
+    "page": "/osb-desky/12mm",
+    "createdAt": "2026-03-17T17:31:56.867Z"
+  },
+  {
+    "name": "OSB desky 15mm",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "",
+    "page": "/osb-desky/15mm",
+    "createdAt": "2026-03-17T17:32:01.957Z"
+  },
+  {
+    "name": "OSB desky 18mm",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "f:30959:42465755",
+    "page": "/osb-desky/18mm",
+    "createdAt": "2026-03-17T17:32:07.587Z"
+  },
+  {
+    "name": "OSB desky 22mm",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "f:30959:42465760",
+    "page": "/osb-desky/22mm",
+    "createdAt": "2026-03-17T17:32:13.225Z"
+  },
+  {
+    "name": "OSB desky 25mm",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "f:30959:42465756",
+    "page": "/osb-desky/25mm",
+    "createdAt": "2026-03-17T17:32:18.757Z"
+  },
+  {
+    "name": "OSB desky - podlaha",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "",
+    "page": "/osb-desky/podlaha",
+    "createdAt": "2026-03-17T17:32:24.280Z"
+  },
+  {
+    "name": "OSB desky - garáž",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "",
+    "page": "/osb-desky/garaz",
+    "createdAt": "2026-03-17T17:32:29.395Z"
+  },
+  {
+    "name": "OSB desky - příslušenství",
+    "positionId": null,
+    "categoryId": "6038",
+    "categoryFilters": "",
+    "page": "/osb-desky/prislusenstvi",
+    "createdAt": "2026-03-17T17:32:34.619Z"
+  }
+]

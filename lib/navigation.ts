@@ -5,12 +5,12 @@ export const mainNavigation: NavItem[] = [
     label: 'OSB desky',
     href: '/osb-desky',
     children: [
-      { label: 'Podle sily', href: '/osb-desky/podle-silly' },
-      { label: 'Podle rozmeru', href: '/osb-desky/podle-rozmeru' },
-      { label: 'Vyuziti', href: '/osb-desky/vyuziti' },
+      { label: 'Podle síly', href: '/osb-desky/podle-silly' },
+      { label: 'Podle rozměrů', href: '/osb-desky/podle-rozmeru' },
+      { label: 'Využití', href: '/osb-desky/vyuziti' },
       { label: 'Tipy', href: '/osb-desky/tipy' },
-      { label: 'Prislusenstvi', href: '/osb-desky/prislusenstvi' },
-      { label: 'Dodavatele', href: '/osb-desky/dodavatele' },
+      { label: 'Příslušenství', href: '/osb-desky/prislusenstvi' },
+      { label: 'Dodavatelé', href: '/osb-desky/dodavatele' },
       { label: 'Cena', href: '/osb-desky/cena' },
       { label: 'Lokalita', href: '/osb-desky/lokalita' },
     ],
@@ -34,7 +34,7 @@ export const mainNavigation: NavItem[] = [
 
 export const categoryMap: Record<string, { label: string; subcategories: { slug: string; label: string }[] }> = {
   'podle-silly': {
-    label: 'Podle sily',
+    label: 'Podle síly',
     subcategories: [
       { slug: '8mm', label: 'OSB desky 8mm' },
       { slug: '12mm', label: 'OSB desky 12mm' },
@@ -47,41 +47,41 @@ export const categoryMap: Record<string, { label: string; subcategories: { slug:
     ],
   },
   'podle-rozmeru': {
-    label: 'Podle rozmeru',
+    label: 'Podle rozměrů',
     subcategories: [
-      { slug: '2500x1250', label: 'OSB desky 2500 x 1250mm' },
+      { slug: '2500x1250', label: 'OSB desky 2500 × 1250 mm' },
     ],
   },
   'vyuziti': {
-    label: 'Vyuziti',
+    label: 'Využití',
     subcategories: [
       { slug: 'podlaha', label: 'Podlaha z OSB desek' },
       { slug: 'terarium', label: 'Terarium z OSB desek' },
-      { slug: 'steny', label: 'Steny z OSB desek' },
-      { slug: 'skrin', label: 'Skrin z OSB desek' },
+      { slug: 'steny', label: 'Stěny z OSB desek' },
+      { slug: 'skrin', label: 'Skříň z OSB desek' },
       { slug: 'strop', label: 'OSB desky na strop' },
       { slug: 'chata', label: 'Chata z OSB desek' },
-      { slug: 'podkrovi', label: 'Podkrovi z OSB desek' },
+      { slug: 'podkrovi', label: 'Podkroví z OSB desek' },
       { slug: 'terasa', label: 'Terasa z OSB desek' },
-      { slug: 'garaz', label: 'Garaz z OSB desek' },
+      { slug: 'garaz', label: 'Garáž z OSB desek' },
     ],
   },
   'tipy': {
     label: 'Tipy',
     subcategories: [
-      { slug: 's-perodrazkou', label: 'OSB desky s perodrazkou' },
-      { slug: 'vodeodolne', label: 'Vodeodolna OSB deska' },
-      { slug: 'brousene', label: 'Brousene OSB desky' },
-      { slug: 'venkovni', label: 'OSB desky venkovni pouziti' },
+      { slug: 's-perodrazkou', label: 'OSB desky s pérem a drážkou' },
+      { slug: 'vodeodolne', label: 'Voděodolná OSB deska' },
+      { slug: 'brousene', label: 'Broušené OSB desky' },
+      { slug: 'venkovni', label: 'OSB desky – venkovní použití' },
     ],
   },
   'prislusenstvi': {
-    label: 'Prislusenstvi',
+    label: 'Příslušenství',
     subcategories: [
-      { slug: 'adhezni-mustek', label: 'Adhezni mustek na OSB' },
+      { slug: 'adhezni-mustek', label: 'Adhezní můstek na OSB' },
       { slug: 'lepidlo', label: 'Lepidlo na OSB desky' },
-      { slug: 'krocejova-izolace', label: 'Krocejova izolace pod OSB' },
-      { slug: 'nater', label: 'Nater na OSB desky' },
+      { slug: 'krocejova-izolace', label: 'Kročejová izolace pod OSB' },
+      { slug: 'nater', label: 'Nátěr na OSB desky' },
       { slug: 'barva', label: 'Barva na OSB desky' },
       { slug: 'lak', label: 'Lak na OSB desky' },
       { slug: 'nivelace', label: 'Nivelace na OSB desky' },
@@ -89,7 +89,7 @@ export const categoryMap: Record<string, { label: string; subcategories: { slug:
     ],
   },
   'dodavatele': {
-    label: 'Dodavatele',
+    label: 'Dodavatelé',
     subcategories: [
       { slug: 'dek', label: 'OSB desky DEK' },
     ],
@@ -97,7 +97,7 @@ export const categoryMap: Record<string, { label: string; subcategories: { slug:
   'cena': {
     label: 'Cena',
     subcategories: [
-      { slug: 'nejlevnejsi', label: 'Nejlevnejsi OSB desky' },
+      { slug: 'nejlevnejsi', label: 'Nejlevnější OSB desky' },
     ],
   },
   'lokalita': {

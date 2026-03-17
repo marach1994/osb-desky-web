@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
-import HeurekaWidget from '@/components/affiliate/HeurekaWidget'
 import HeurekaProductGrid from '@/components/affiliate/HeurekaProductGrid'
 import RelatedArticles from '@/components/article/RelatedArticles'
 import ProductGrid from '@/components/products/ProductGrid'
@@ -34,8 +33,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = categoryMap[slug]
   if (cat) {
     return generateCategoryMetadata(
-      `${cat.label} - OSB desky`,
-      `OSB desky - ${cat.label}. Prehled vsech clanku v kategorii.`,
+      `OSB desky – ${cat.label}`,
+      `Přehled článků v kategorii ${cat.label}. Vyberte konkrétní téma a zjistěte vše o OSB deskách.`,
       `/osb-desky/${slug}`
     )
   }
@@ -56,14 +55,22 @@ export default async function OsbDeskySlugPage({ params }: Props) {
   // 1. Check if it's a category page
   const cat = categoryMap[slug]
   if (cat) {
+    const catBreadcrumbJsonLd = generateBreadcrumbJsonLd([
+      { name: 'OSB desky', url: '/osb-desky' },
+      { name: cat.label, url: `/osb-desky/${slug}` },
+    ])
     return (
-      <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(catBreadcrumbJsonLd) }} />
+
         <Breadcrumbs items={[
           { label: 'OSB desky', href: '/osb-desky' },
           { label: cat.label, href: `/osb-desky/${slug}` },
         ]} />
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">{cat.label}</h1>
-        <p className="text-gray-600 mb-8">Prehled vsech clanku v kategorii {cat.label}.</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">{cat.label} – OSB desky</h1>
+        <p className="text-gray-600 mb-8">
+          Přehled článků v kategorii <strong>{cat.label}</strong>. Vyberte konkrétní téma a zjistěte vše potřebné.
+        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {cat.subcategories.map((sub) => (
@@ -75,6 +82,10 @@ export default async function OsbDeskySlugPage({ params }: Props) {
               <h2 className="font-semibold text-gray-900">{sub.label}</h2>
             </Link>
           ))}
+        </div>
+
+        <div className="mt-10">
+          <HeurekaProductGrid positionId="260397" categoryId="6038" />
         </div>
       </div>
     )
@@ -146,8 +157,8 @@ export default async function OsbDeskySlugPage({ params }: Props) {
             { label: sub.label, href: `/osb-desky/${slug}` },
           ]} />
           <h1 className="text-3xl font-bold text-gray-900 mb-4">{sub.label}</h1>
-          <p className="text-gray-500">Obsah tohoto clanku bude brzy doplnen.</p>
-          <HeurekaWidget position="top" />
+          <p className="text-gray-500">Obsah tohoto článku bude brzy doplněn.</p>
+          <HeurekaProductGrid positionId="260397" categoryId="6038" />
         </div>
       )
     }

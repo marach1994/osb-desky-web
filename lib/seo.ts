@@ -6,7 +6,7 @@ const SITE_NAME = 'OSB-desky.cz'
 
 export function generateArticleMetadata(article: Article, urlPath: string): Metadata {
   return {
-    title: `${article.title} | ${SITE_NAME}`,
+    title: { absolute: `${article.title} | ${SITE_NAME}` },
     description: article.description,
     keywords: article.keywords,
     openGraph: {
@@ -23,7 +23,7 @@ export function generateArticleMetadata(article: Article, urlPath: string): Meta
 
 export function generateCategoryMetadata(title: string, description: string, urlPath: string): Metadata {
   return {
-    title: `${title} | ${SITE_NAME}`,
+    title: { absolute: `${title} | ${SITE_NAME}` },
     description,
     openGraph: {
       title,

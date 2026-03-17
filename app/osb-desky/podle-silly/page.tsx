@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
-import HeurekaWidget from '@/components/affiliate/HeurekaWidget'
-import { generateCategoryMetadata } from '@/lib/seo'
+import HeurekaProductGrid from '@/components/affiliate/HeurekaProductGrid'
+import { generateCategoryMetadata, generateBreadcrumbJsonLd, generateArticleJsonLd } from '@/lib/seo'
+
 
 export const metadata: Metadata = generateCategoryMetadata(
   'OSB desky podle síly – Průvodce výběrem správné tloušťky',
@@ -54,9 +55,28 @@ const thicknesses = [
   },
 ]
 
+const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+  { name: 'OSB desky', url: '/osb-desky' },
+  { name: 'Podle síly', url: '/osb-desky/podle-silly' },
+])
+
+const articleJsonLd = generateArticleJsonLd(
+  {
+    title: 'OSB desky podle síly – Průvodce výběrem správné tloušťky',
+    description: 'Jak vybrat správnou tloušťku OSB desky? Porovnání desek 8mm až 25mm, použití, nosnost a doporučení pro každou tloušťku.',
+    publishedAt: '2025-01-31',
+    category: 'osb-desky',
+    keywords: ['osb desky tloušťka', 'osb síla desky', 'osb 18mm vs 22mm'],
+  } as any,
+  '/osb-desky/podle-silly'
+)
+
 export default function PodleSilyPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+
       <Breadcrumbs items={[
         { label: 'OSB desky', href: '/osb-desky' },
         { label: 'Podle síly', href: '/osb-desky/podle-silly' },
@@ -194,7 +214,7 @@ export default function PodleSilyPage() {
         </div>
       </section>
 
-      <HeurekaWidget position="middle" />
+      <HeurekaProductGrid positionId="260397" categoryId="6038" />
 
       {/* Související kategorie */}
       <section className="my-10 pt-8 border-t border-gray-200">
@@ -227,7 +247,7 @@ export default function PodleSilyPage() {
         </div>
       </section>
 
-      <HeurekaWidget position="bottom" />
+      <HeurekaProductGrid positionId="260397" categoryId="6038" />
     </div>
   )
 }

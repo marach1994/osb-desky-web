@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import HeurekaProductGrid from '@/components/affiliate/HeurekaProductGrid'
 import HeurekaAffiliateCategoryBanner from '@/components/affiliate/HeurekaAffiliateCategoryBanner'
+import HeurekaZebricek from '@/components/affiliate/HeurekaZebricek'
 import { barvyLakyCategoryMap, barvyLakyStandaloneArticles, allBarvyLakyArticleSlugs } from '@/lib/barvy-navigation'
 import { getArticleBySlug, getArticleContent, getAllArticles } from '@/lib/mdx'
 import { getRelatedArticles } from '@/lib/related'
@@ -109,6 +110,15 @@ export default async function BarvyALakySlugPage({ params }: Props) {
               const cf = props.categoryFilters ?? article.heurekaCategoryFilters
               if (!pid || !cid) return null
               return <HeurekaProductGrid positionId={pid} categoryId={cid} categoryFilters={cf} />
+            },
+            // Novy recenzni zebricek. Props ma stejny tvar jako HeurekaProductGrid,
+            // vcetne fallbacku na hodnoty z frontmatteru.
+            HeurekaZebricek: (props: { positionId?: string; categoryId?: string; categoryFilters?: string; title?: string; pocet?: number }) => {
+              const pid = props.positionId || article.heurekaPositionId
+              const cid = props.categoryId || article.heurekaCategoryId
+              const cf = props.categoryFilters ?? article.heurekaCategoryFilters
+              if (!pid || !cid) return null
+              return <HeurekaZebricek positionId={pid} categoryId={cid} categoryFilters={cf} title={props.title} pocet={props.pocet} />
             },
           }} />
         </div>

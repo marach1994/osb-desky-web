@@ -144,6 +144,17 @@ export default function HeurekaZebricek({
   // Zadne regexy - v template literalu komponenty by se zpetne lomitko snedlo.
   function uklid(){
     var polozky = document.querySelectorAll('.polozka')
+
+    var pojmenovanych = 0
+    for (var k = 0; k < polozky.length; k++) {
+      var el = polozky[k].querySelector('.nazev')
+      if (el && el.textContent.trim() !== '') pojmenovanych++
+    }
+    // Dokud trixam nevykreslil ani jednu polozku, nesahame na nic. Mazani je
+    // nevratne: kdyz se uklid trefil pred render, smazal cely zebricek a ten
+    // uz nemel na cem stavet - widget zustal prazdny natrvalo.
+    if (pojmenovanych === 0) return 0
+
     var platnych = 0
     for (var i = 0; i < polozky.length; i++) {
       var li = polozky[i]
@@ -160,9 +171,6 @@ export default function HeurekaZebricek({
       var poradi = li.querySelector('.poradi')
       if (poradi && poradi.textContent != platnych) poradi.textContent = platnych
     }
-    // Prazdna kategorie - schovat cely widget, at nezustane prazdny ram.
-    var widget = document.querySelector('.heureka-affiliate-category')
-    if (widget) widget.style.display = platnych === 0 ? 'none' : ''
     return platnych
   }
 

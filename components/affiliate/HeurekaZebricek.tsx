@@ -30,9 +30,12 @@ export default function HeurekaZebricek({
   const pathname = usePathname()
 
   const onMessage = useCallback((event: MessageEvent) => {
-    if (event.data?.type === 'heurekaResize' && iframeRef.current) {
-      iframeRef.current.style.height = `${event.data.height}px`
-    }
+    if (event.data?.type !== 'heurekaResize' || !iframeRef.current) return
+    // V clanku je zebricku vic a vsechny posilaji zpravu na stejne window.
+    // Bez overeni odesilatele by kazda instance nastavila svemu iframu vysku
+    // z cizi zpravy a vsechny ramy by skoncily na vysce toho posledniho.
+    if (event.source !== iframeRef.current.contentWindow) return
+    iframeRef.current.style.height = `${event.data.height}px`
   }, [])
 
   useEffect(() => {

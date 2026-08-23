@@ -125,8 +125,13 @@ export default function HeurekaZebricek({
 <script>
   var casovac = null
 
+  // Merit pres body.scrollHeight nejde: kdyz je obsah nizsi nez iframe, vrati
+  // vysku iframu misto obsahu, takze by vyska umela jen rust. Po uklidu polozek
+  // je potreba, aby se ram i stahl - meri se proto spodni hrana widgetu.
   function posliVysku(){
-    var h = document.body.scrollHeight
+    var widget = document.querySelector('.heureka-affiliate-category')
+    var h = widget ? Math.ceil(widget.getBoundingClientRect().bottom) + 4
+                   : document.body.scrollHeight
     if (h > 0) window.parent.postMessage({type:'heurekaResize', height:h}, '*')
   }
 

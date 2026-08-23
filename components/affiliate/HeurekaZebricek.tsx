@@ -123,15 +123,53 @@ export default function HeurekaZebricek({
 </div>
 <script src="https://serve.affiliate.heureka.cz/js/trixam.min.js"><\/script>
 <script>
+  var casovac = null
+
   function posliVysku(){
     var h = document.body.scrollHeight
     if (h > 0) window.parent.postMessage({type:'heurekaResize', height:h}, '*')
   }
-  new MutationObserver(function(){ setTimeout(posliVysku, 100) })
-    .observe(document.body, {childList:true, subtree:true})
+
+  // Trixam ma v ifdef chybu o jedna: kdyz kategorie vrati min produktu, nez
+  // je v zebricku polozek, prebytecne li sice odstrani, ale posledni nechá
+  // navazane na neexistujici produkt a vypise "undefined". Doklizime rucne.
+  // Zadne regexy - v template literalu komponenty by se zpetne lomitko snedlo.
+  function uklid(){
+    var polozky = document.querySelectorAll('.polozka')
+    var platnych = 0
+    for (var i = 0; i < polozky.length; i++) {
+      var li = polozky[i]
+      var nazevEl = li.querySelector('.nazev')
+      var cenaEl = li.querySelector('.cena')
+      var nazev = nazevEl ? nazevEl.textContent : ''
+      var cena = cenaEl ? cenaEl.textContent : ''
+      var rozbita = nazev.trim() === '' || (nazev + cena).indexOf('undefined') !== -1
+      if (rozbita) {
+        li.parentNode.removeChild(li)
+        continue
+      }
+      platnych++
+      var poradi = li.querySelector('.poradi')
+      if (poradi && poradi.textContent != platnych) poradi.textContent = platnych
+    }
+    // Prazdna kategorie - schovat cely widget, at nezustane prazdny ram.
+    var widget = document.querySelector('.heureka-affiliate-category')
+    if (widget) widget.style.display = platnych === 0 ? 'none' : ''
+    return platnych
+  }
+
+  function dorovnej(){ uklid(); posliVysku() }
+
+  // Debounce: uklizet se smi az kdyz trixam dorenderuje, jinak bychom smazali
+  // polozku, ktera jeste nema vyplneny nazev.
+  new MutationObserver(function(){
+    clearTimeout(casovac)
+    casovac = setTimeout(dorovnej, 500)
+  }).observe(document.body, {childList:true, subtree:true})
+
   window.addEventListener('load', function(){ setTimeout(posliVysku, 400) })
   window.addEventListener('resize', posliVysku)
-  ;[800, 1600, 3000].forEach(function(t){ setTimeout(posliVysku, t) })
+  ;[800, 1600, 3000].forEach(function(t){ setTimeout(dorovnej, t) })
 <\/script>
 </body></html>`
 

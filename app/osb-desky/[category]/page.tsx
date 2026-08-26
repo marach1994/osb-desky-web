@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import HeurekaZebricek from '@/components/affiliate/HeurekaZebricek'
 import RelatedArticles from '@/components/article/RelatedArticles'
@@ -109,10 +110,30 @@ export default async function OsbDeskySlugPage({ params }: Props) {
     ]
     const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems)
 
+    // Widget nad nadpisem pusobil jako reklama pred obsahem. Patri az pod H1,
+    // jenze H1 je uvnitr MDX - proto se vklada pres override komponenty h1,
+    // ne jako samostatny prvek pred <MDXRemote>.
+    const hlavniWidget = article.heurekaPositionId && article.heurekaCategoryId ? (
+      <HeurekaZebricek
+        key={slug}
+        positionId={article.heurekaPositionId}
+        categoryId={article.heurekaCategoryId}
+        categoryFilters={article.heurekaCategoryFilters}
+      />
+    ) : (
+      <ProductGrid products={products} />
+    )
+
     // MDX components with products pre-bound
     // Recenzni zebricek. Props ma stejny tvar jako v barvach a laku vcetne
     // fallbacku na hodnoty z frontmatteru, aby sel v clanku volat bez atributu.
     const mdxComponents = {
+      h1: (props: { children?: ReactNode }) => (
+        <>
+          <h1>{props.children}</h1>
+          {hlavniWidget}
+        </>
+      ),
       ProductGridWidget: () => <ProductGridWidget products={products} />,
       HeurekaZebricek: (props: { positionId?: string; categoryId?: string; categoryFilters?: string; title?: string; pocet?: number }) => {
         const pid = props.positionId || article.heurekaPositionId
@@ -133,17 +154,6 @@ export default async function OsbDeskySlugPage({ params }: Props) {
           ...(catInfo ? [{ label: catInfo.label, href: `/osb-desky/${article.subcategory}` }] : []),
           { label: article.title, href: `/osb-desky/${slug}` },
         ]} />
-
-        {article.heurekaPositionId && article.heurekaCategoryId ? (
-          <HeurekaZebricek
-            key={slug}
-            positionId={article.heurekaPositionId}
-            categoryId={article.heurekaCategoryId}
-            categoryFilters={article.heurekaCategoryFilters}
-          />
-        ) : (
-          <ProductGrid products={products} />
-        )}
 
         <div className="prose prose-gray max-w-none">
           <MDXRemote source={content} components={mdxComponents} />

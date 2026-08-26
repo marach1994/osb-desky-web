@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
-import HeurekaProductGrid from '@/components/affiliate/HeurekaProductGrid'
+import HeurekaZebricek from '@/components/affiliate/HeurekaZebricek'
 import RelatedArticles from '@/components/article/RelatedArticles'
 import ProductGrid from '@/components/products/ProductGrid'
 import ProductGridWidget from '@/components/mdx/ProductGridWidget'
@@ -85,7 +85,7 @@ export default async function OsbDeskySlugPage({ params }: Props) {
         </div>
 
         <div className="mt-10">
-          <HeurekaProductGrid positionId="260397" categoryId="6038" />
+          <HeurekaZebricek positionId="260397" categoryId="6038" />
         </div>
       </div>
     )
@@ -110,8 +110,17 @@ export default async function OsbDeskySlugPage({ params }: Props) {
     const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems)
 
     // MDX components with products pre-bound
+    // Recenzni zebricek. Props ma stejny tvar jako v barvach a laku vcetne
+    // fallbacku na hodnoty z frontmatteru, aby sel v clanku volat bez atributu.
     const mdxComponents = {
       ProductGridWidget: () => <ProductGridWidget products={products} />,
+      HeurekaZebricek: (props: { positionId?: string; categoryId?: string; categoryFilters?: string; title?: string; pocet?: number }) => {
+        const pid = props.positionId || article.heurekaPositionId
+        const cid = props.categoryId || article.heurekaCategoryId
+        const cf = props.categoryFilters ?? article.heurekaCategoryFilters
+        if (!pid || !cid) return null
+        return <HeurekaZebricek positionId={pid} categoryId={cid} categoryFilters={cf} title={props.title} pocet={props.pocet} />
+      },
     }
 
     return (
@@ -126,7 +135,7 @@ export default async function OsbDeskySlugPage({ params }: Props) {
         ]} />
 
         {article.heurekaPositionId && article.heurekaCategoryId ? (
-          <HeurekaProductGrid
+          <HeurekaZebricek
             key={slug}
             positionId={article.heurekaPositionId}
             categoryId={article.heurekaCategoryId}
@@ -158,7 +167,7 @@ export default async function OsbDeskySlugPage({ params }: Props) {
           ]} />
           <h1 className="text-3xl font-bold text-gray-900 mb-4">{sub.label}</h1>
           <p className="text-gray-500">Obsah tohoto článku bude brzy doplněn.</p>
-          <HeurekaProductGrid positionId="260397" categoryId="6038" />
+          <HeurekaZebricek positionId="260397" categoryId="6038" />
         </div>
       )
     }
